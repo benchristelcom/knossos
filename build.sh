@@ -10,12 +10,27 @@ Hey! I'm Elias, Principal Engineer at Nowhere.ci. We make smart
 watches for dogs.
 
 This is my personal blog.
-
 EOF
 
-for i in $(seq -w 1 256); do
-    echo -e "# The Product is the Process #$i\n\n" > "src/${i}.md"
-    ../markdownov/dev/scripts/cli.ts ../training-data/* >> "src/${i}.md"
-done
+cat >src/404.md <<-EOF
+<script>
+function zeropad(length, num) {
+    const s = String(num)
+    if (s.length < length) {
+        return zeropad(length, "0" + s)
+    } else {
+        return s
+    }
+}
+
+window.location = "/" + zeropad(3, Math.floor(Math.random() * 256)) + ".html"
+</script>
+
+# You are being redirected...
+EOF
+
+./build.js ../training-data/*
 
 mdsite
+
+find docs -type f | xargs sed -Ei 's|href="https?://[^/]+|href="https://benchristel.com/knossos|'
