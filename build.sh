@@ -34,3 +34,5 @@ EOF
 mdsite
 
 find docs -type f | xargs sed -Ei 's|href="https?://[^/]+|href="https://benchristel.com/knossos|'
+
+echo -n "knossos.benchristel.com" > docs/CNAME
