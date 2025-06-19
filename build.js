@@ -24,7 +24,7 @@ async function main() {
     }
 
     const writePromises = []
-    for (let i = 0; i < 256; i++) {
+    for (let i = 256; i < 512; i++) {
         const id = zeropad(3, i)
         const path = `src/${id}.md`
         const text = `# The Product Is The Process \#${id}\n\n` + model.generate()
