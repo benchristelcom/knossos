@@ -1,2 +1,2 @@
 #!/bin/sh
-cd docs && npx http-server -c-1 -o
+cd docs && npx http-server -c-1 -p9999 -o
