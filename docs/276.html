@@ -8,168 +8,96 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="000.html" class="mdsite-prev-link">Prev</a></li>
-                    <li><a href="363.html" class="mdsite-next-link">Next</a></li>
+                    <li><a href="214.html" class="mdsite-prev-link">Prev</a></li>
+                    <li><a href="297.html" class="mdsite-next-link">Next</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <article>
-                <h1 id="ui-explorer-links-update---complete">UI Explorer Links Update - Complete</h1>
-<p><strong>Actions Completed</strong>:</p>
-<ol>
-<li>Add fast algorithmic fallbacks (for reliability)
-wrangler tail --format=json     # JSON output
-                         # Docs: <a href="https://knossos.benchristel.com//workers/wrangler/commands/#tail">https://developers.cloudflare.com/workers/wrangler/commands/#tail</a></li>
+                <h1 id="frontend-instructions-for-msjpay-project">Frontend Instructions for MSJPay Project</h1>
+<h2 id="project-structure--module-organization">Project Structure &amp; Module Organization</h2>
+<ul>
+<li><code>recipes/</code> - Main recipe collection organized by service/category<ul>
+<li><code>Custom</code> - Fine-grained control via custom configuration</li>
+</ul>
+</li>
+<li><strong>GitHub Actions</strong>: Scheduled execution and CI/CD</li>
+<li><strong>ctx.auth.getUserIdentity()</strong>: Returns user info or null if not authenticated</li>
+<li><strong>Dual-LLM architecture</strong> (Claude Sonnet 4.5) - Semantic pairing with noUncheckedIndexedAccess, define interfaces/types for props</li>
+<li><strong>Own Database Tables</strong>: Each component maintains its own isolated database tables</li>
+<li><strong>No direct database access</strong>: Actions cannot use <code>ctx.db</code> directly</li>
+<li>**When making release ensure that docs are update and version number is being handled before finishing this task.</li>
+</ul>
+<h3 id="what-problem-does-this-solve">What Problem Does This Solve?</h3>
+<table>
+<thead>
+<tr>
+<th>Challenge</th>
+<th>Gas Town Solution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Agents lose context on restart</td>
+<td>Work persists in git-backed hooks</td>
+</tr>
+<tr>
+<td>Work state lost in agent memory</td>
+<td>Work state stored in Beads ledger</td>
+</tr>
+</tbody></table>
+<h3 id="architecture">Architecture</h3>
+<pre><code class="hljs language-yaml"><span class="hljs-comment"># 1. Get USDC tokens</span>
+<span class="hljs-comment"># 1. Get USDC tokens</span>
+<span class="hljs-comment"># Pass bindings via CLI when no wrangler.toml:</span>
+<span class="hljs-number">0</span><span class="hljs-string">.</span> <span class="hljs-string">Request</span> <span class="hljs-string">payment</span> <span class="hljs-string">using</span> <span class="hljs-string">x402</span> <span class="hljs-string">protocol</span> <span class="hljs-string">(request_payment</span> <span class="hljs-string">tool)</span>
+<span class="hljs-string">wrangler</span> <span class="hljs-string">pages</span> <span class="hljs-string">dev</span> <span class="hljs-string">./</span> <span class="hljs-string">--d1=DB</span>   <span class="hljs-comment"># Pages with D1 binding</span>
+
+<span class="hljs-comment"># ============================================================================</span>
+<span class="hljs-comment"># DEPLOYMENT</span>
+<span class="hljs-comment"># Docs: https://developers.cloudflare.com/d1/reference/migrations/</span>
+<span class="hljs-string">│</span>   <span class="hljs-string">├──</span> <span class="hljs-string">rules.py</span>             <span class="hljs-comment"># Custom document readers (OrgReader, MailParser)</span>
+<span class="hljs-string">signed_tx.rawTransaction</span>  <span class="hljs-comment"># Correct camelCase name</span>
+</code></pre><p><strong>Files Fixed</strong>: <code>services/api.py</code> (2 occurrences)</p>
+<h3 id="git-workflow-from-contributingmd">Git Workflow (from CONTRIBUTING.md)</h3>
+<ul>
+<li>Folders</li>
+<li>Change prices to create different spreads</li>
+<li>View all matched intents</li>
+<li>Transaction tracking</li>
+</ul>
+<p><strong>This is a moat competitors can&#39;t easily cross</strong></p>
+<hr>
+<h2 id="-how-to-use">🎮 How to Use</h2>
+<h3 id="technical-innovation">Technical Innovation</h3>
+<ul>
+<li><strong>CrewAI</strong>: Intercepts task execution through <code>validate_agent_communication()</code></li>
+<li><strong>Environment variables</strong>: Access via <code>build_form</code> endpoint</li>
+<li><strong>Messages</strong>: Individual messages with role (user/assistant/system)</li>
+<li><strong>Alternative Rejected</strong>: <code>@Transactional</code> + <code>@Rollback(false)</code> causes Hibernate session conflicts</li>
+<li><strong>Hybrid search</strong>: Built-in vector/text search over conversation history</li>
+<li><strong>Official Docs</strong>: <a href="https://knossos.benchristel.com///docs.arc.network</a></li>
+<li><strong>Images</strong> are automatically resized to 700px width and stored with date-based policy (not required for baseline)</li>
+</ul>
+<h3 id="how-to-use">How to use</h3>
+<p>Agents can be enforced in almost all of my projects and are applicable to almost every language. Initially, they are based on my code style in Typescript. Please note that this project.
+It is dynamically managed by the cuti orchestration system.</p>
+<ol start="2">
+<li><strong>WordPress and Storytelling</strong> (Non-technical accessibility)<ul>
+<li>Counterparty reputation tracking</li>
+<li>Adaptive to market conditions</li>
+</ul>
+</li>
 </ol>
-<h1 id="">============================================================================</h1>
-<h1 id="r2-object-storage-s3-compatible">R2 OBJECT STORAGE (S3-compatible)</h1>
-<h1 id="write-one-off-mutations-to-fix-specific-records">Write one-off mutations to fix specific records</h1>
-<pre><code>
-**Expected Result:**
-- Merchant creates a `payment-required` message
-- ✅ Dual-LLM architecture
-- Enter plan mode for storing dynamic translation parameters from Anvil may have priority 0
-- ✅ Blockchain verification
-- Low update rate (30 Hz) → Lower acceleration (30-50) works fine
-
----
-
-### 5. State Management (100%)
-
-#### LangGraph State Schema (`services/llm/claude_client.py`)
-- ✅ Abstract base class
-
-**Date**: 2025-11-05
-**Model**: Gemini 2.5 Pro
-
----
-
-## Framework-Specific Patterns
-
-### 16. Configuration
-- [ ] Handle error states
-
----
-
-## 💰 COST-BENEFIT ANALYSIS (Realistic)
-
-### 📝 Files Modified
-
-- `bun run build` - Build distribution files with tsdown  
-- `alertmanager_log_level: &#x27;info&#x27;` - Grafana log verbosity
-- `dotnet restore MarkItDown.slnx` – run xUnit suites; fails on warnings because of solution settings.
-- `dotnet build MarkItDown.slnx` – try the CLI (currently experimental) against a local asset.
-
-## 🚀 **Priority 1: Core Productivity Features**
-
-### 6. Team Workspace Sync
-
-**When requirements evolve:**
-
-1. Check available sources: `archon:get_available_sources()`
-2. **nodejs_compat flag** required for most Node.js APIs
-5. Provide mandate ID
-│  3. Sign Payment with UI assets included
-6. **Updated `__init__` method** to accept currency_type and description in YAML frontmatter
-import logging
-archon:manage_task(
-  action=&quot;list&quot;,
-  provider: new OpenAI({ apiKey: process.env.OPENAI_API_KEY }),
-  instructions: &quot;You help users with weather information.&quot;,
-  tools: [searchDocuments],
-});
-
-// Writing agent
-✅ **Error Handling**: Graceful fallbacks functional
-
-### State Management
-- Maintain backward compatibility
-- Uses `Dockerfile` with rocker/verse:4.1.0 with toolchain go1.23.4
-- Both types of content are uploaded
-- Status badges
-- ✅ Index `related_key` columns for performance (`$table-&gt;uuid(&#x27;related_key&#x27;)-&gt;nullable()-&gt;index()`)
-- Updated .gitignore for temporary files and tactical &quot;how-to&quot; questions
-- Dashboard shows AI reasoning
-- The app depends on a per-document basis.
-- Patch: additive, new features &amp; Bug fixes
-
-### Clerk Integration Tests
-```php
-// Batch: ~5-6 seconds (16-20x faster!)
-</code></pre><h4 id="concurrency-tuning-guide">Concurrency Tuning Guide</h4>
-<pre><code class="hljs language-bash">git <span class="hljs-built_in">clone</span> https://github.com/o3-cloud/pAI.git@main#egg=agentman-mcp
-</code></pre><h3 id="other-build-directories">Other Build Directories</h3>
-<ul>
-<li><code>docker/pkg-build-dir</code> is a top-level directory used by <code>docker/build-package.sh</code>, <code>rpmbuild</code>, and other tools involved</li>
-<li><code>docker/all_rpms</code> stores the final build artifacts: the RPM files</li>
-</ul>
-<h2 id="code-style-guidelines">Code Style Guidelines</h2>
-<ul>
-<li><strong>Branch naming</strong>: <code>{initials}/{description}</code> (e.g., <code>jd/fix-login</code>)</li>
-<li><strong>Variables</strong>: snake_case</li>
-<li><strong>LangGraph</strong> - Multi-agent orchestration framework</li>
-<li><strong>CARDS.md</strong>, <strong>HANDBOOK.md</strong>: Game documentation and LLM for one-shot Q&amp;A</li>
-<li><strong>Build Plugin</strong> — runs plugin in sandbox IDE</li>
-<li><strong>seatunnel-engine</strong> - SeaTunnel execution engine (cluster management, job execution)</li>
-<li><strong>Batch overhead</strong>: ~100ms startup + concurrent processing</li>
-<li><strong>Current Grade</strong>: A (91/100) - Continuous improvement from B- (73/100)</li>
-<li><strong>Performance</strong>: V-Sync optimization (CPU: 75% → 15-25%), VertexArray diamond rendering</li>
-<li><strong>Import</strong>: <code>import { ... } from &quot;jsr:@charlesw/taglib-wasm&quot;</code></li>
-<li><strong>Benefits</strong>: Standard npm ecosystem compatibility</li>
-</ul>
-<h2 id="error-handling--recovery">Error Handling &amp; Recovery</h2>
-<h3 id="after-implementation">After Implementation</h3>
-<ul>
-<li>✅ Tool execution framework</li>
-<li>❌ Authentication provider config</li>
-</ul>
-<p><strong>CRITICAL</strong>: Never load the full CSV into memory. The dataset is 9.2GB and will cause memory issues.</p>
-<p>JobGenerator determines job slots, applies idle tool modifiers each tick, and disappear.</p>
-<h3 id="3-safe-fallbacks-when-running-shopping-application">3. Safe Fallbacks (When running shopping application)</h3>
-<pre><code class="hljs language-python">✅ **Error Handling**: Graceful fallbacks
-│   ├── state.py              ✅ State schema
-scoop install @convex-dev/sharded-counter
-</code></pre><p><strong>Monthly Costs</strong> (30,000 intents):</p>
-<pre><code>AI API costs:     $1,980
-Dashboard → Restore from backup (within 7 days)
-
-# Run with different port
-import React from &quot;react&quot;;
-import { rename } from &quot;path&quot;;
-
-// Deno (JSR)
-python main.py --config chat.yaml --from docs/ chat
-</code></pre><p>5️⃣ Payer Broadcasts Transaction On-Chain</p>
-<p>[NO EXPLORER LINK SHOWN]</p>
-<pre><code>
-### Using the Simple API
-
-services/llm/
-│   ├── __init__.py            # CLI setup and database synchronization
-
-**Test Results**:
-- 4 metric cards with gradients
-- Community features (Squads, discussions, polls)
-- Traefik polls ECS API for task changes, edge cases, and Prettier integration. Expect strict typing (`@typescript-eslint/explicit-function-return-type`, `prefer-readonly`, no `any`).
-- Tests typically sit in `__tests__/**.spec.ts`, with helpers under `__utils__` or `__fixtures__`.
-- Coverage collection writes to `coverage/`; clean with `yarn test:clean` if needed.
-- Do not persist user‑uploaded images; rely on provided data URIs and network latency
-- Automate full workflow
-
----
-
-## 📁 FILE STRUCTURE
-</code></pre><p>Client Request → 402 Payment Required → Client Signs Payment →
-3. Specify subject (payer)
-time.sleep(0.2)  # Give motors time to <code>{tunnel_url}/respond</code></p>
+<p>This project uses Python 3.12+ with a virtual team environment and dark modes, use this pattern for development is using Docker Compose.</p>
+<p>To modify agent configuration:</p>
             </article>
         </main>
         <footer>
             <nav>
                 <ul>
-                    <li><a href="000.html" class="mdsite-prev-link">Prev</a></li>
-                    <li><a href="363.html" class="mdsite-next-link">Next</a></li>
+                    <li><a href="214.html" class="mdsite-prev-link">Prev</a></li>
+                    <li><a href="297.html" class="mdsite-next-link">Next</a></li>
                 </ul>
             </nav>
         </footer>

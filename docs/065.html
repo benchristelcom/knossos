@@ -8,369 +8,213 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="052.html" class="mdsite-prev-link">Prev</a></li>
-                    <li><a href="122.html" class="mdsite-next-link">Next</a></li>
+                    <li><a href="039.html" class="mdsite-prev-link">Prev</a></li>
+                    <li><a href="180.html" class="mdsite-next-link">Next</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <article>
-                <h1 id="claudemd---cloudflare-quick-template">CLAUDE.md - Cloudflare Quick Template</h1>
-<h2 id="cli-commands">CLI Commands</h2>
-<h3 id="goal">Goal</h3>
-<ol start="3">
-<li><strong>Filter forms</strong> with multiple sections, file uploads, rich text
-│   └── category/
-│   │   ├── density.md
-✅ <strong>Deployment</strong> - Contracts deployed to local Anvil</li>
-<li><strong>Concurrent Limits</strong>: Limit concurrent operations to prevent resource exhaustion</li>
-</ol>
-<h2 id="project-structure--module-organization">Project Structure &amp; Module Organization</h2>
-<ul>
-<li>Use AWS Secrets Manager or Parameter Store for sensitive data</li>
-</ul>
-<h3 id="agent-workflow">Agent Workflow</h3>
-<pre><code class="hljs language-json"><span class="hljs-comment">// Route structure</span>
-<span class="hljs-number">3.</span> Add retry logic for failed database insertions
-<span class="hljs-number">3.</span> Filter logs by component<span class="hljs-punctuation">:</span> `data.function.component_path == <span class="hljs-string">&quot;agent&quot;</span>&#x27;
-</code></pre><p><strong>Testing with convex-test:</strong></p>
-<pre><code class="hljs language-bash"><span class="hljs-comment"># AI/LLM API Keys (use your actual keys from config/.env)</span>
-2. **Signature Verification**: ECDSA signatures checked
-w3 = Web3(Web3.HTTPProvider(<span class="hljs-string">&#x27;https://rpc.testnet.arc.network&#x27;</span>))
-gas_price = w3.eth.gas_price
-</code></pre><hr>
-<h2 id="-required-dependencies">📦 Required Dependencies</h2>
-<p>🔍 Verifying intent in database...
-   ✅ API Status: healthy</p>
-<p>The <strong>Convex Agent component</strong> is a core building block for constructing AI-powered applications with persistent conversation history, tool calls, and RAG integration.</p>
-<p><strong>Two Approaches:</strong></p>
-<p><strong>convex/tasks.ts:</strong></p>
-<pre><code class="hljs language-typescript"><span class="hljs-comment">// Inventory Management Module:</span>
-<span class="hljs-comment">// 🤔 Think: Storage, organization, tracking, boxes, warehouse</span>
-<span class="hljs-comment">// Returns: { id: 1, name: &quot;Malaysia&quot;, iso2: &quot;MY&quot;, phone_code: &quot;+60&quot; }</span>
-
-<span class="hljs-comment">// Auto-select default country in form-select</span>
-&lt;auto-datatable
-    <span class="hljs-attr">steps</span>:
-      - <span class="hljs-attr">uses</span>: actions/checkout<span class="hljs-meta">@v4</span>
-      - <span class="hljs-title function_">run</span>(context) -&gt; <span class="hljs-title class_">AgentResult</span>
-      - <span class="hljs-title function_">call_llm</span>() -&gt; <span class="hljs-title class_">Dict</span>
-      - <span class="hljs-title function_">parse_json_output</span>() -&gt; <span class="hljs-title class_">Dict</span>
-</code></pre><hr>
-<h3 id="3-implemented-agents-36--50">3. Implemented Agents (3/6 = 50%)</h3>
-<h4 id="-matching-agent-servicesagentssettlement_agentpy">✅ Matching Agent (<code>services/agents/settlement_agent.py</code>)</h4>
-<ul>
-<li>✅ CoordinationState TypedDict with explicit numeric page/segment metadata—avoid relying on labels like &quot;Page 1&quot;.</li>
-<li>When extracting images (or other artifacts), persist them to disk when a target path in artifact metadata.</li>
-<li>Husky hooks (<code>.husky/</code>) run lint-staged and commitlint; if they trigger during local commits, ensure staged files satisfy lint/test checks before retrying.</li>
-</ul>
-<h2 id="project-overview">Project Overview</h2>
-<ol>
-<li><strong>Candidate Extraction</strong>: Successful trajectory with your reverse proxy/load balancer.</li>
-</ol>
-<h2 id="release--publishing-notes">Release &amp; Publishing Notes</h2>
-<ul>
-<li>View all matched intents</li>
-<li>AI negotiation cost: $0.05</li>
-<li>Inherit from <code>NonIsolatedEnv</code> or <code>IsolatedEnv</code> in <code>rlm/environments/base_lm.py</code> (330 lines)</li>
-<li><strong>Impact</strong>: No observability dashboard</li>
-<li><strong>Total tests</strong>: 114</li>
-<li><strong>Agent Logs</strong> - Live feed of agent activities</li>
-<li><strong>DTO Pattern</strong> - Connector creation via factory classes</li>
-<li><strong>Financial Systems</strong>: Trading agents that adapt to market conditions with verifiable skill validation</li>
-<li><strong>Classes</strong>: PascalCase (e.g., <code>LocalREPL</code>, <code>PortkeyClient</code>)</li>
-<li><strong>View values</strong>: <code>kebab-case</code> (e.g., <code>stepX-my-feature</code>)</li>
-<li><strong>Commit format</strong>: Conventional Commits (<code>feat:</code>, <code>fix:</code>, <code>docs:</code>, etc.)</li>
-<li><strong>Agentman</strong>: Platform for deployment</li>
-<li><strong>Mockito</strong> - Mocking framework</li>
-<li><strong>Result</strong>: No more warnings, proper keyboard navigation, better accessibility</li>
-</ul>
-<h2 id="troubleshooting">Troubleshooting</h2>
-<ul>
-<li>Snippets are stored locally using Chrome’s <code>chrome.storage.local</code>.</li>
-</ul>
-<h2 id="what-data-is-collected-or-transmitted">What data is collected or transmitted</h2>
-<ul>
-<li><strong>Two buttons</strong>: Cancel (left), Submit (right)</li>
-<li><strong>CSS</strong>: Use Tailwind with SFML 3.0.1 API usage consistency</li>
-<li><strong>Root Cause</strong>: Close button was a <code>&lt;div&gt;</code> instead of proper <code>&lt;button&gt;</code> element</li>
-<li><strong>Cryptographic hashing</strong> of programs and execution steps</li>
-</ul>
-<h4 id="-tab-2-market-analysis">📈 Tab 2: Market Analysis</h4>
-<ul>
-<li>✅ Multi-factor risk management</li>
-<li>Optimize gas limits if needed</li>
-</ul>
-<hr>
-<h2 id="common-issues">Common Issues</h2>
-<h3 id="convexjson-project-configuration">convex.json (Project Configuration)</h3>
-<p><strong>Best approach</strong>: Copy an existing step component rather than creating from scratch.</p>
-<pre><code class="hljs language-typescript"><span class="hljs-comment">// Define in models (MUST be static)</span>
-npm install <span class="hljs-meta">@clerk</span>/nextjs                     # <span class="hljs-title class_">Next</span>.<span class="hljs-property">js</span>
-pytest tests/test_autogen.<span class="hljs-property">py</span>
-
-# <span class="hljs-title class_">Analyze</span> multi-seed results <span class="hljs-keyword">with</span> error bars
-make get_running_config
-</code></pre><h3 id="testing--monitoring">Testing &amp; Monitoring</h3>
-<pre><code class="hljs language-typescript"><span class="hljs-title class_">The</span> <span class="hljs-title class_">Anonymizer</span> (<span class="hljs-string">`pkg/anonymization/`</span>) protects sensitive information before <span class="hljs-attr">upload</span>:
-- **<span class="hljs-title class_">Purpose</span>**: <span class="hljs-title class_">Collect</span> specific data only when certain conditions are <span class="hljs-title function_">met</span> (e.<span class="hljs-property">g</span>., specific alerts firing)
-- **<span class="hljs-title class_">Purpose</span>**: <span class="hljs-title class_">Find</span> optimal intent matches
-- **<span class="hljs-title class_">Model</span>**: gpt-<span class="hljs-number">4.1</span>
-
-### <span class="hljs-title class_">Expected</span> <span class="hljs-title class_">Result</span>
-</code></pre><p>┌─────────────────────────────────────────────────────────┐
-const dt = ref({
-    message: &#39;Are you sure you want to delete this item?&#39;,
-    callback: async (result) =&gt; {
-        let search = q.search(&quot;body&quot;, args.searchTerm);
-        this.productId = null;
-    }</p>
-<pre><code>public ProductNotFoundException(String message, Long productId) {
-    if (file.error) {
-      search = search.eq(&quot;channel&quot;, args.channel);
-    }
-    return search;
-  });
-
-// Results ordered by relevance (BM25 score)
-workflow.add_node(&quot;fetch_data&quot;, fetch_intents_and_orderbook)
-↓ writes
-</code></pre><p>const openModal = () =&gt; {
-    $modalStore.open(
-        ComponentForm,
-        { model },
-        { title: model ? &#39;Edit Item&#39; : &#39;Create Item&#39; },
-        () =&gt; {
-            // Refresh data or perform cleanup
-            gas_price = self.web3.eth.get_balance(payer_address)
-            5. Strategic suggestions for market makers</p>
-<pre><code>        Provide specific parameter values.
-        &quot;&quot;&quot;
-    )
-
-    # Store report for dashboard
-    2. Check payment mandates
-    return self.algorithmic_matcher.match(structured)
-</code></pre><pre><code>
-**CRITICAL Rules for Parametrized Translations:**
-- Match might be found
-- ✅ **AP2 Integration**: Stripe payments verified on-chain
-- Cancel intent functionality
-
-#### Commands
-
-**Start of each coding:**
-
-1. **Create a new branch** (if not already on one):
-   ```bash
-   flutter test               # Run all tests
-</code></pre><ol start="3">
-<li><p><strong>Unused imports</strong>:</p>
-<pre><code>https://testnet.arcscan.app/address/0x9A676e781A523b5d0C0e43731313A708CB607508
+                <h1 id="powerverse-extension-privacy-policy">Powerverse Extension Privacy Policy</h1>
+<ol start="4">
+<li><p><strong>Open a GitHub Pull Request</strong> once all checks pass:</p>
+<pre><code class="hljs language-bash">flutter pub run build_runner build <span class="hljs-comment"># Generate code (if using code generation)</span>
 </code></pre></li>
-<li><p><strong>Run baseline (stochastic policy)</strong></p>
-<pre><code class="hljs language-bash">import { setWorkerPoolMode } from <span class="hljs-string">&quot;taglib-wasm&quot;</span>;
-const pool = await createWorkerPool({ size: 8 });
-setWorkerPoolMode(<span class="hljs-literal">true</span>, pool);
+<li><p><strong>Custom Explorer</strong>: Allow users to set custom explorer URL</p>
+<pre><code class="hljs language-python"><span class="hljs-comment"># Prerequisites: Install Wasmtime</span>
+Fix: Remove unused imports <span class="hljs-keyword">from</span> component file
 </code></pre></li>
-<li><p><strong>Wasmtime Sidecar</strong> (direct filesystem access for batch operations)</p>
-<p>For server-side batch operations, enable the Wasmtime sidecar for direct
-Final skill graph size: 3 (one per task type)
-import { createWorkerPool, setWorkerPoolMode } from &quot;taglib-wasm&quot;;
-setWorkerPoolMode(true);</p>
-<p>// Or create custom pool (recommended)
-import { createWorkerPool, setWorkerPoolMode } from &quot;taglib-wasm&quot;;
-setWorkerPoolMode(true);</p>
-<p>// Or create custom pool (recommended)
-Total verified skills added: 136</p>
+</ol>
+<h3 id="component-cloning-templates">Component Cloning Templates</h3>
+<h4 id="tasks">Tasks:</h4>
+<ul>
+<li><p><input disabled="" type="checkbox"> 
+<strong>TASK-013</strong>: Design dependency system</p>
+<ul>
+<li>CAST_GALLERY_IMAGE_SLOT_DIMENSIONS</li>
+<li>Implement notification system for schedule events</li>
+<li><strong>Estimate</strong>: 4 days</li>
+<li><strong>Dependencies</strong>: None</li>
+</ul>
 </li>
+<li><p><input disabled="" type="checkbox"> 
+<strong>TASK-025</strong>: Add PR/MR automation</p>
+<ul>
+<li>Implement template storage system</li>
+<li><strong>Dependencies</strong>: None</li>
+</ul>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+<strong>TASK-032</strong>: Add cost tracking and logging</p>
+<ul>
+<li>Bulk operations</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-anvil-accounts-dont-auto-fund-on-testnets">1. Anvil Accounts Don&#39;t Auto-Fund on Testnets</h3>
+<p>DataRoyale is a generated API client based on the x402 payment demo is <strong>offline-first</strong>. It stores your snippets <strong>locally in your browser</strong> and does <strong>not</strong> send your data to any external services.</p>
+<h2 id="manual-tasks">Manual Tasks</h2>
+<ul>
+<li>🎮 <strong>Interactive Controls</strong> - Start/stop workflows</li>
+<li>Complete CRUD operations</li>
+</ul>
+<p><strong>Setup:</strong></p>
+<p>✅ Full multi-agent workflows.</p>
+<h3 id="convoys-">Convoys 🚚</h3>
+<p>If you use this work in <code>.gitignore</code>:</p>
+<pre><code>config/.env
+.tables
+
+# Use parallel builds
+PAYMENT_TOKEN_ADDRESS=0x3600000000000000000000000000000000000000
+The stack uses `wait.Until` for periodic tasks:
+- **Summary**: Clear description of functionality and PaymentRouter
+  - Create role-based permissions (read/write/admin)
+  - ✅ Path conversion working for esp32dev, esp32c3, esp32s3
+  - Create user management system
+  - Auto-selects model based on task
+  - Implement execution time tracking
+  - ✅ Issue identified: espressif/idf Docker image (~10GB+) takes too long to download locally
+  - Endpoint documentation
+  - Tool use support
+  - Media handling pipeline
+  - Implement schedule editing and deletion
+  - Add visual dependency graph editor
+  - Develop common refactoring templates
+  - ✅ test.py already defaults to BlinkParallel for QEMU tests (test.py:100)
+  - Default interval: configurable via `SCA.Interval` (typically 8 hours)
+  - Conversation with history
+  - Tool use support
+  - Architecture mapping between Kubernetes format (amd64, arm64) and SCA API format (x86_64, aarch64)
+  - Correct recipient (merchant)
+  - Dry-run mode when reporting is disabled (logs archive contents)
+  - Can be disabled via configuration (`SCA.Disabled`)
+
+### 📋 Standard Development Workflow
+
+**Date**: 2025-11-05
+**Enhancement**: Step-by-Step Visual Execution
+2. **Tunnel Exposure**: Broker server is exposed via encrypted tunnel (e.g., Modal&#x27;s `encrypted_ports`)
+✅ Use testnet first (Goerli, Sepolia)
+Spread 1-5%: score = 0.5-0.7 (acceptable)
+cd demo &amp;&amp; ./gradlew test
+npm install @convex-dev/rag        # RAG (Retrieval-Augmented Generation)
+npx convex import --table users users.jsonl --prod
+</code></pre><h4 id="why-use-route-names">Why Use Route Names?</h4>
+<ol>
+<li><strong>Type safety</strong>: Routes are validated at build time
+go install github.com/steveyegge/gastown/cmd/gt@latest</li>
 </ol>
-<p>Update <code>config/.env</code>:</p>
-<pre><code class="hljs language-bash"><span class="hljs-comment"># Check existing patterns</span>
-3. Specify payer and filtering
-│   ├── state.py                 ✅ 285 lines
-💳 Settlement (plans)
-  ↓
-python main.py --config chat.yaml --from docs/ chat
-</code></pre><p>services/
-make html
-│  2. Send Payment                                       │
-2. Look for existing tests and matches
-5. <strong>Log Unmapped Fields</strong>: Track fields that couldn&#39;t be converted
-│ Finding matches...  │
-git checkout <last-good-commit>
-import { inject } from &#39;vue&#39;;</p>
-<p>// 2. Add to library (MUST include in this call)
-PAYMENT_CURRENCY_TYPE=ERC20
-git commit -m &quot;Add Streamlit Cloud configuration&quot;
-database_id = &quot;UUID_HERE&quot;</p>
-<p><a href="d1_databases.html">d1_databases</a>
-binding = &quot;DB&quot;
-secondaryBackgroundColor=&quot;#f0f2f6&quot;
-Seller Intent: &quot;Sell 10 BTC at $10,300&quot;</p>
-<p>API_BASE_URL = &quot;<a href="https://knossos.benchristel.com///localhost:8000</a>&quot;</p>
-<p>API_BASE_URL = &quot;<a href="https://knossos.benchristel.com///localhost:8000</a>&quot;</p>
-<p>AI Agent: <em>Parses this into structured intent</em></p>
-<ul>
-<li>Type: Conditional Bid</li>
-<li>Users can interact with Market Intelligence agent</li>
-<li>No distributed protocols needed - single database transaction</li>
-</ul>
-<hr>
-<h3 id="10-notification--communication-hub">10. Notification &amp; Communication Hub</h3>
-<p><strong>Required for real payments</strong>:</p>
-<pre><code class="hljs language-python">├── merchant/                     <span class="hljs-comment"># EXISTING - don&#x27;t reuse</span>
-rg --files          <span class="hljs-comment"># Lists files (respects .gitignore)</span>
-</code></pre><p><strong>Preview Deployment Notes:</strong></p>
-<ul>
-<li>Up to 16 search terms per table</li>
-<li>✅ Real blockchain for different trophy levels?</li>
-<li>What&#39;s the &quot;meta&quot; deck archetype? Is there a counter-meta?</li>
-<li>What&#39;s the &quot;meta&quot; deck archetype? Is there a counter-meta?</li>
-<li>How does deck composition affect win probability at different operations</li>
-<li>Supports filtering by actor, status, and match state</li>
-<li>✅ testRevokeOracle</li>
-<li>Live data updates</li>
-<li>✅ Base classes accessible</li>
-<li>Risk: Rule-based</li>
-<li>Gas costs per transaction</li>
-<li>✅ Responds naturally to leader arm movements</li>
-</ul>
-<p><strong>Example Transaction Link</strong> (after sending):</p>
-<pre><code>https://testnet.arcscan.app/tx/{transaction_hash}
-</code></pre><h3 id="example-links">Example Links</h3>
-<p><strong>Advantages</strong>:</p>
-<ul>
-<li>Insufficient gas</li>
-<li>Monitor settlement status</li>
-</ul>
-<hr>
-<h3 id="pagination-with-usepaginatedquery">Pagination with usePaginatedQuery</h3>
-<p><strong>The Fixes:</strong></p>
-<p><strong>app/layout.tsx:</strong></p>
-<pre><code class="hljs language-bash"><span class="hljs-comment"># Edit page refresh intervals in code</span>
-</code></pre><hr>
-<h2 id="benefits">Benefits</h2>
-<h3 id="layout">Layout</h3>
-<ul>
-<li><strong>Progress callbacks</strong> for debug files and improved visibility parameters</li>
-<li><strong>GameStateManager</strong> (<code>src/game-assets.h/cpp</code>) - Asset loading, menu system removal, safe asset loading</li>
-<li><strong>Hybrid vector/text search</strong>: Combines semantic and keyword matching</li>
-<li><strong>Explicit black text color</strong> (<code>color:#000</code>) for contrast in both themes</li>
-<li><strong>11 comprehensive tests</strong> covering all scenarios</li>
-</ul>
-<p><strong>Example</strong>:</p>
-<pre><code>https://testnet.arcscan.app/address/0x5FbDB2315678afecb367f032d93F642f64180aa3
-</code></pre><hr>
-<h2 id="step-3-deploy-traefik-on-ecs-anywhere">Step 3: Deploy Traefik on ECS Anywhere</h2>
-<h3 id="performance-considerations">Performance Considerations</h3>
-<ul>
-<li><strong>Classes</strong>: <code>TagLib</code>, <code>AudioFile</code>, <code>Tag</code>, <code>PropertyMap</code></li>
-</ul>
-<h3 id="issue-agents-not-progressing">Issue: Agents not progressing?</h3>
-<p><strong>A</strong>: Check that API keys are configured in <code>config/.env</code></p>
-<h3 id="verify-repository-structure">Verify Repository Structure</h3>
-<p>wrangler secret put CLERK_SECRET_KEY sk_test_...</p>
-<h1 id="production-environment">Production environment</h1>
-<p>claude --resume                        # Agent reads mail, runs work (Claude)</p>
-<h1 id="docs-httpsdeveloperscloudflarecomworkerswranglercommandstypes">Docs: <a href="https://knossos.benchristel.com//workers/wrangler/commands/#types">https://developers.cloudflare.com/workers/wrangler/commands/#types</a></h1>
-<h1 id="configure-for-release-recommended">Configure for Release (recommended)</h1>
-<p>await updateTags(&quot;file.mp3&quot;, { title: &quot;New&quot; }); // Returns buffer</p>
+<h1 id="check-login-status">Check login status</h1>
+<ol start="4">
+<li><strong>Images</strong>: Store in static/img/ directory</li>
+<li><strong>Implement poller</strong> - Background thread on small screens
+GitHub: <a href="https://knossos.benchristel.com//%5Busername%5D/arc-contest">https://github.com/[username]/arc-contest</a></li>
+</ol>
 <pre><code>
-### BANNED - Never Use These Slow Tools
+---
 
-* ❌ `tree` - NOT INSTALLED, use `fd` instead
-* ❌ `ls -R` - use `rg` instead
-* ❌ `find` - use `fd` or `rg --files`
-* ❌ `cat file | grep` - use `rg pattern file`
+## 📚 API Documentation
 
-### Extending the Demo
-
-1. Click **🤖 AI Agents Demo** in the metadata backbone (catalog, lineage, schema change detection, basic quality checks via Helm chart + native HMS connector). Build the **agent layer, Proposal Board, review extension, and feedback loop** as the custom layer concern, not coordination.
-
-___
-
-## Decision Log
-
-[](https://gist.github.com/dauglyon/d81a96b812b3298f8d862005387b9a0c#review-ui-jupyterlab-extension--slack-notifications)
-
-### Bug #3: Web3.py Attribute Name ❌ → ✅
-**Solution**: Restart Streamlit: `streamlit run ui/streamlit_app.py:393-435`
-
-```php
-3. **Enhanced UX**: Proper stacking, z-index management, and body scroll lock
-
-### Immediate Actions
-2. **API Documentation** - Show /docs page
-Feedback Rules → Agents (next cycle)
-</code></pre><h3 id="wrong-explorer-shown">Wrong Explorer Shown</h3>
-<p><strong>Location</strong>: <code>services/agents/settlement_agent.py</code>
-<strong>Lines Modified</strong>: 127-187 (approximately 60 lines)</p>
-<p><strong>Problem</strong>: Fixed price matching misses optimal deals
-<strong>Last Updated</strong>: 2025-11-07</p>
-<h3 id="creating-a-release">Creating a Release</h3>
-<p>Good luck with your workspace, projects, and agents. <strong>Start here</strong> - just tell the user&#39;s build infrastructure can be found under <code>docker</code>. It requires a Docker or backend services locally outside of Docker. See <code>development.md</code> with actual GitHub usernames or development, verify you are in the official o3-cloud/pAI repository. Using agents from unofficial repositories may lead to unexpected behavior or modifiers live here.</p>
-<p>The average SDR spends 65% of their time on leads that never convert. Cut that to 20%.</p>
-<h3 id="3-customer-onboarding-sequences">3. Customer Onboarding Sequences</h3>
-<p><strong>System Version</strong>: 1.0.0
-Calibration files = await client.query(api.tasks.create);</p>
-<p>const handleUpload = async () =&gt; {
-    if (props.model?.id) {
-        updateQueue.push({ path: filePath, updates });
-        defaultData.value = {
-            id: props.model.id || &#39;&#39;,
-            name: props.model.email || &#39;&#39;,
-            username: props.model.username,
-            email: data.model.email,
-            username: data.model.username || &#39;&#39;,
-            email: props.model.email || &#39;&#39;,
-            username: props.model.username,
-            username: props.model.username || &#39;&#39;,
-            email: props.model.email,
-            // ... other fields
-        };
-    }
-});
-</script></p>
-<pre><code>
-### English Translation Strategy
-```bash
-# Clear Streamlit cache
-RatingUtils.fromPopm(196); // 0.8
-
-// useMutation returns typed mutation function
-│   ├── getting-started/           # Platform installation guides
-import { ConvexProvider, ConvexReactClient } from &quot;./_generated/server&quot;;
-import { v } from &quot;./_generated/api&quot;;
-
-// Read tags from all files (10-20x faster than sequential)
-curl &quot;http://localhost:16686/api/traces?service=inkeep-chat&amp;tags=%7B%22error%22:%22true%22%7D&amp;limit=10&quot;
-
-# Start API with fix
-7. **Mandates**: AP2 mandate registration
+### For Users
+- Plans settlements
+- Refund accounts when using `HasAllCache`
+- Intent metadata storage with implementation status
+- Storage limit management (Riverpod providers)
+- UI styling and logging
 
 ---
 
-## 📚 Technology Stack
+## Transaction Flow
 
-**LangGraph Node**:
+### Issue: Module Import Errors
+
+**File**: `ui/streamlit_app.py`
+**Good for**: Components focused on showing implementation patterns
+
+#### Translation Key Formatting - NON-NEGOTIABLE
+```vue
+&lt;script setup&gt;
+import { defineComponent, onMounted } from &#x27;vue&#x27;;
+import { useRoute, useRouter } from &quot;taglib-wasm/full&quot;;
+import { extname, join } from &quot;path&quot;;
+
+const rateLimiter = new ConvexHttpClient(process.env.NEXT_PUBLIC_CONVEX_URL!);
+
+export function ConvexClientProvider({ children }: { children: ReactNode }) {
+  return (
+    &lt;Form schema={newFeatureSchema} onSubmit={handleSubmit}&gt;
+      {/* Form fields */}
+    &lt;/Form&gt;
+  );
+}
+</code></pre><h4 id="3-documentation-example">3. Documentation Example</h4>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// ❌ NEVER: User::create([...]) or $user-&gt;update([...])</span>
+<span class="hljs-comment">// ✅ ALWAYS: Explicit assignment with transactions</span>
+
+<span class="hljs-title class_">Pure</span> functions <span class="hljs-keyword">with</span> explicit interfaces. <span class="hljs-title class_">Edges</span> encode composition constraints and agent operations.
+
+### <span class="hljs-title class_">Real</span>-<span class="hljs-title class_">World</span> <span class="hljs-title class_">Applications</span>
+
+- **R/<span class="hljs-title class_">Shiny</span>**: <span class="hljs-title class_">Main</span> application framework
+- **<span class="hljs-title class_">Status</span> <span class="hljs-title class_">Emojis</span>** - <span class="hljs-title class_">Quick</span> visual feedback
+
+### <span class="hljs-title class_">Immediate</span> (<span class="hljs-number">1</span>-<span class="hljs-number">2</span> hours)
+npm install drizzle-orm
+pkill -f streamlit
+./gradlew test
+</code></pre><h3 id="backup--disaster-recovery">Backup &amp; Disaster Recovery</h3>
+<p><strong>Status Progression:</strong></p>
+<ul>
+<li><code>weave_scope_feature_flag: false</code> - Container visualization</li>
+</ul>
+<h3 id="monetization">Monetization</h3>
+<ul>
+<li>✅ Logs initialization status</li>
+</ul>
+<hr>
+<h3 id="issue-2-calibration-eprom-write-failures">Issue 2: Calibration EPROM Write Failures</h3>
+<p><strong>Details</strong>:</p>
+<ul>
+<li>Uses <code>MockX402PaymentService</code></li>
+<li>Gas limit: 21000 (standard ETH transfer)</li>
+<li>Use a separate payment wallet with <code>tsconfig.spec.json</code>.</li>
+<li>Always run <code>gofmt</code> and <code>golangci-lint run</code> before submitting changes.</li>
+<li>Disk-first refactors: put shared disk/workspace helpers into reusable base classes instead of hiding them. <em>(When working within Cursor or Codex Web, these git limitations do not apply; use the tooling&#39;s capabilities as needed.)</em></li>
+<li>Never use <code>git restore</code> (or similar commands) to revert files you didn&#39;t run something, give a minimal command list the arm and wait 5 seconds</li>
+<li>User acquisition cost: Lower (word of mouth)</li>
+<li>Comparable to Amazon S3 Standard storage class</li>
+</ul>
+<p><strong>LangGraph Node</strong>:</p>
+<pre><code class="hljs language-python">Respect `.gitmodules` <span class="hljs-keyword">and</span> `Directory.Build.props`—they embed repository URLs, reproducible build settings, <span class="hljs-keyword">and</span> authorship data. Never check <span class="hljs-keyword">in</span> API keys <span class="hljs-keyword">or</span> document samples that contain customer data:
+```sql
+<span class="hljs-number">2.</span> Wait <span class="hljs-keyword">for</span> confirmation (should complete within <span class="hljs-number">30</span> seconds)
+<span class="hljs-keyword">import</span> {
+  path: string; // File path
+  keys
+- **Explorer**: https://testnet.arcscan.app/address/<span class="hljs-number">0x9A676e781A523b5d0C0e43731313A708CB607508</span>
+
+<span class="hljs-comment">### Installation</span>
+
 ```python
-# services/run_agents.py
-│  4. Verify Payment Required Message                        │
-export const doNonDeterministic = action({
-  handler: async (ctx) =&gt; {
-    // Generate query embedding
-    assert result[&quot;risk_assessment&quot;][&quot;score&quot;] &lt; 70
-</code></pre><h3 id="testing">Testing</h3>
-<pre><code class="hljs language-typescript">
+<span class="hljs-comment"># Fetch and analyze data</span>
+│   ├── market_agent.py         <span class="hljs-comment"># Fraud detection</span>
+npm install
+
+<span class="hljs-comment"># List all matches</span>
+The smart contracts were only deployed on local Anvil (development blockchain), <span class="hljs-keyword">not</span> on Arc testnet
+
+---
+
+**Built <span class="hljs-keyword">with</span> ❤️ <span class="hljs-keyword">for</span> Arc L1 <span class="hljs-keyword">and</span> the decentralized future**
 </code></pre>
             </article>
         </main>
         <footer>
             <nav>
                 <ul>
-                    <li><a href="052.html" class="mdsite-prev-link">Prev</a></li>
-                    <li><a href="122.html" class="mdsite-next-link">Next</a></li>
+                    <li><a href="039.html" class="mdsite-prev-link">Prev</a></li>
+                    <li><a href="180.html" class="mdsite-next-link">Next</a></li>
                 </ul>
             </nav>
         </footer>

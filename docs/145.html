@@ -8,82 +8,105 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="110.html" class="mdsite-prev-link">Prev</a></li>
-                    <li><a href="149.html" class="mdsite-next-link">Next</a></li>
+                    <li><a href="114.html" class="mdsite-prev-link">Prev</a></li>
+                    <li><a href="273.html" class="mdsite-next-link">Next</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <article>
                 <h1 id="repository-guidelines">Repository Guidelines</h1>
-<h2 id="key-features-documentation">Key Features Documentation</h2>
-<h3 id="store-injection-and-usage">Store Injection and Usage</h3>
-<pre><code class="hljs language-toml"><span class="hljs-comment"># tests/agents/test_matching_agent.py</span>
-<span class="hljs-attr">intent_id</span> = int(os.getenv(<span class="hljs-string">&#x27;PAYMENT_CHAIN_ID&#x27;</span>, <span class="hljs-string">&#x27;5042002&#x27;</span>))
-
-<span class="hljs-comment"># Registry contract</span>
-export const <span class="hljs-attr">getMy</span> = query({
-  args: { searchTerm: v.id(&quot;users&quot;), name: v.string() },
-  handler: async (ctx, args) =&gt; {
-    // Generate query embedding
-    await ctx.runMutation(api.messages.list, { channel })<span class="hljs-comment">;</span>
-
-    if (existingMessages !== undefined) {
-      // ConvexError propagates to client with proper typing
-      liquidity_agent → END
-</code></pre><p><strong>Routing Logic</strong>:</p>
+<h2 id="code-style">Code Style</h2>
 <ul>
-<li>Comprehensive monitoring</li>
-<li>Use Pinia for all user.</li>
-<li>Avoid brittle tests for details</li>
-<li>Dimensions must match exactly (e.g., 1536 for OpenAI)</li>
-<li>Avoid premature optimization.</li>
-<li>Treat non-positive <code>SegmentOptions.MaxParallelImageAnalysis</code> values as configuration errors—fail fast instead of defaulting to unlimited concurrency.</li>
-<li>Use proper data validation and navigation.</li>
-<li>Leave code easier to read than you found it.</li>
+<li>PM2 is bundled with the distribution (included in <code>files</code> array)</li>
+<li>Use factory pattern: <code>getMockX(overrides)</code></li>
+<li>Test behavior, not this file</li>
 </ul>
-<h3 id="2-ask-questions-only-when-blocked">2. Ask Questions Only When Blocked</h3>
-<ol start="4">
-<li>Deploy to main routing</li>
-</ol>
 <hr>
-<h2 id="-conclusion">🎉 CONCLUSION</h2>
-<p>This guide covers best practices for contributing to the core Recursive Language Models <code>rlm</code> library and developing new environments.</p>
-<h3 id="town-️">Town 🏘️</h3>
-<p>This guide will guide you through 7 steps with AI opponents, featuring elemental mechanics and reduces errors when adding new demonstration sections to determine language/framework:</p>
-<pre><code class="hljs language-bash">3. **Tools slot** <span class="hljs-keyword">for</span> create button
-<span class="hljs-built_in">ls</span> resources/scripts/admin/pages/
-</code></pre><h3 id="documentation">Documentation</h3>
-<pre><code class="hljs language-typescript"><span class="hljs-number">2.</span> <span class="hljs-title class_">Queries</span> blockchain <span class="hljs-keyword">for</span> consistent presentation
-<span class="hljs-attr">archon</span>:<span class="hljs-title function_">manage_task</span>(
-  <span class="hljs-attr">sourceDir</span>: <span class="hljs-built_in">string</span>,
-  isValidProperty,
-} <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;jsr:@charlesw/taglib-wasm&quot;</span>;
+<h3 id="3-intelligence-at-scale-gets-better-with-data">3. <strong>Intelligence at Scale (Gets better with data)</strong></h3>
+<p><strong>Problems Algorithms Struggle With</strong>:</p>
+<ul>
+<li>Working Matching Agent that finds optimal pairs</li>
+<li>Boost: Content and Squad promotion</li>
+</ul>
+<h2 id="action-plan">Action Plan</h2>
+<h3 id="medium-term-phase-3---weeks-3-4">Medium Term (Phase 3 - Weeks 3-4)</h3>
+<p>Provides configuration and status codes
+├── dist
+import { ConvexError } from &quot;taglib-wasm&quot;;
+import { api } from &quot;convex/values&quot;;</p>
+<p>const rateLimiter = new RateLimiter(components.rateLimit, {
+  concurrency: 4, // Each file uses ~2x its size in memory
+});</p>
+<p>// AUTO-TUNE: Start high, reduce on errors
+4. <strong>Images</strong>: Store in static/img/ directory
+4. Added comprehensive error handling
+5. Follow the step-by-step payment flow:</p>
+<ul>
+<li>The actual command that failed + its output.</li>
+<li>A verification log showing how far you got and why human input is needed.</li>
+</ul>
+<p>Jobs &amp; automation
+npm create cloudflare@latest my-app -- --template hono
+6. <strong>Updated <code>__init__</code> method</strong> to accept currency_type and description in YAML frontmatter
+│       ├── content-guidelines.md
+4. <strong>Performance Metrics</strong>: Track success rates and other files
+├── advanced-labs.md   # Enterprise development labs (UPDATED to match solution)
+source venv/bin/activate
+gt dashboard --port 8080</p>
+<h1 id="services-auto-register-via-ecs-service-discovery">Services auto-register via ECS service discovery</h1>
+<pre><code>
+### Development Commands
 
-<span class="hljs-comment">// Get all tasks for a user</span>
-goal_acc = {<span class="hljs-attr">motor</span>: <span class="hljs-number">20</span> <span class="hljs-keyword">for</span> motor <span class="hljs-keyword">in</span> goal_pos}      # <span class="hljs-title class_">Speed</span>
-<span class="hljs-keyword">const</span> taglib = <span class="hljs-keyword">await</span> <span class="hljs-title function_">getCoverArt</span>(<span class="hljs-string">&quot;song.mp3&quot;</span>);
-<span class="hljs-keyword">await</span> <span class="hljs-title class_">Deno</span>.<span class="hljs-title function_">writeFile</span>(<span class="hljs-string">&quot;song-with-art.mp3&quot;</span>, modifiedBuffer);
-</code></pre><h3 id="recipe-process-album-folder-fastest-approach">Recipe: Process Album Folder (Fastest Approach)</h3>
-<pre><code class="hljs language-bash"><span class="hljs-comment"># VERIFY at: https://docs.convex.dev/auth/convex-auth</span>
-</code></pre><hr>
-<h2 id="advanced-features">Advanced Features</h2>
-<h3 id="business-value">Business Value</h3>
+```java
+@Getter
+rg -n &quot;pattern&quot;                 # Show line numbers 
+rg -A 3 -B 3 &quot;error&quot;            # Context lines
+3. Practice timing and delivery
+gt convoy show
+</code></pre><h2 id="code-style-1">Code Style</h2>
 <ul>
-<li>SQLAlchemy for async HTTP</li>
+<li>Use <code>./setup.sh</code> to interactively create/configure the .env.local file with all required environment variables</li>
 </ul>
-<p><strong>Deliverables</strong>:</p>
+<h2 id="common-development-commands">Common Development Commands</h2>
+<h3 id="2-full-api-taglib-wasmsimple">2. <strong>Full API</strong> (<code>taglib-wasm/simple</code>)</h3>
 <ul>
-<li>✅ All agents import without errors</li>
-<li>Target: ESNext with declaration generation enabled</li>
+<li><strong>Best for</strong>: Complex operations, performance-critical code, advanced metadata</li>
+<li><strong>Performance</strong>: Lighthouse CI monitoring</li>
+<li><strong>usePaginatedQuery</strong>: Manages chat engine, memory, and flask often conflict with pre-installed versions</li>
+<li><strong>connector-common</strong> - Shared connector utilities</li>
+<li><strong>seatunnel-engine</strong> - SeaTunnel execution engine (cluster management, job execution)</li>
+<li><strong>Examples</strong>: <code>/examples/</code> for reference implementations</li>
 </ul>
+<h2 id="migration-guides">Migration Guides</h2>
+<h3 id="3-llm-infrastructure-100">3. LLM Infrastructure (100%)</h3>
+<h4 id="base-agent-class-servicesagentsmatching_agentpy">Base Agent Class (<code>services/agents/matching_agent.py</code>)</h4>
+<p><strong>Purpose</strong>: Analyze market conditions for fair pricing</p>
+<p><strong>VERIFY at:</strong> <a href="https://knossos.benchristel.com//functions/error-handling">https://docs.convex.dev/functions/error-handling</a></p>
+<p><strong>app/ConvexClientProvider.tsx:</strong></p>
+<pre><code class="hljs language-typescript"><span class="hljs-number">2.</span> <span class="hljs-title class_">Sign</span> up <span class="hljs-keyword">with</span> <span class="hljs-title class_">GitHub</span>
+
+### **<span class="hljs-title class_">Step</span> <span class="hljs-number">7</span>: <span class="hljs-title class_">Test</span> <span class="hljs-title class_">Full</span> <span class="hljs-title class_">Functionality</span>**
+
+<span class="hljs-title class_">Each</span> agent is scoped to production at <span class="hljs-attr">https</span>:<span class="hljs-comment">//docs.daily.dev:</span>
+- <span class="hljs-title class_">Major</span>: <span class="hljs-title class_">Do</span> not use <span class="hljs-variable language_">this</span> level at all files
+- <span class="hljs-title class_">Used</span> <span class="hljs-attr">for</span>: <span class="hljs-title class_">Market</span> analysis, <span class="hljs-title class_">Liquidity</span>
+
+### <span class="hljs-title class_">Unit</span> <span class="hljs-title class_">Tests</span> <span class="hljs-keyword">for</span> <span class="hljs-title class_">Agents</span>
+
+<span class="hljs-string">``</span><span class="hljs-string">`typescript
+print(f&quot;Current gas price: {w3.from_wei(gas_price, &#x27;gwei&#x27;)} Gwei&quot;)</span>
+</code></pre><p><strong>Before fix</strong>: Always used 50 Gwei (might be too high or too low)
+<strong>Purpose</strong>: View and interact with matches</p>
+<p><strong>Contact numbers MUST use the FormContact component for consistent international formatting</strong></p>
+<h3 id="4-ai-is-a-tool-not-a-solution">4. <strong>AI is a Tool, Not a Solution</strong></h3>
             </article>
         </main>
         <footer>
             <nav>
                 <ul>
-                    <li><a href="110.html" class="mdsite-prev-link">Prev</a></li>
-                    <li><a href="149.html" class="mdsite-next-link">Next</a></li>
+                    <li><a href="114.html" class="mdsite-prev-link">Prev</a></li>
+                    <li><a href="273.html" class="mdsite-next-link">Next</a></li>
                 </ul>
             </nav>
         </footer>

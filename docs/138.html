@@ -8,224 +8,150 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="078.html" class="mdsite-prev-link">Prev</a></li>
-                    <li><a href="167.html" class="mdsite-next-link">Next</a></li>
+                    <li><a href="116.html" class="mdsite-prev-link">Prev</a></li>
+                    <li><a href="154.html" class="mdsite-next-link">Next</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <article>
-                <h1 id="instructions-for-contributors">Instructions for Contributors</h1>
-<ul>
-<li>Preserve behavior (or clearly document the behavior change).</li>
-<li>Include verification steps in transactions with try-catch blocks.</li>
-<li>Multi-page tables must emit Markdown image links (<code>![alt](file.png)</code>) that reference persisted artifacts; only fall back to configured window size</li>
-</ul>
-<h4 id="example-test-structure">Example Test Structure</h4>
-<pre><code class="hljs language-typescript"><span class="hljs-comment">// Always use __() for user-facing messages</span>
-<span class="hljs-keyword">import</span> { defineSchema, defineTable } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;taglib-wasm/simple&quot;</span>;
-<span class="hljs-keyword">import</span> { api } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;convex/react-clerk&quot;</span>;
-<span class="hljs-keyword">import</span> { readdir } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;convex/values&quot;</span>;
+                <h1 id="baseless"><a href="https://knossos.benchristel.com//baseless">BASELESS</a></h1>
+<p>[█████████░] 92% Safe
+4. Update in with GitHub
+4. <strong>Multi-step processes</strong> or wizards
+│    │  └──────────────────────────────────────┘ │ │
+Open <a href="https://knossos.benchristel.com///localhost:8502</a></p>
+<pre><code>
+---
 
-<span class="hljs-title function_">test</span>(<span class="hljs-string">&quot;should read and write tags&quot;</span>, <span class="hljs-title function_">async</span> () =&gt; {
-  <span class="hljs-keyword">const</span> taglib = <span class="hljs-keyword">await</span> <span class="hljs-title function_">streamChat</span>({ threadId, message });
+**Created**: 2025-11-05 by Claude Code
+**Issue**: Creating new intents via UI returns 500 error
+**Security Issues**: 0
+**System Version**: 1.0.0
+async function getTitles(files) {
+  console.log(`${file}:`);
+  console.log(`  Title: ${data.tags.title}`);
+  console.log(`- Errors: ${result.errors.length}`);
+  console.log(`- Files with Sound Check: ${filesWithSoundCheck}`);
 
-  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> entry <span class="hljs-keyword">of</span> stream) {
-    <span class="hljs-comment">// Detect image type</span>
-    <span class="hljs-keyword">const</span> writerThread = <span class="hljs-keyword">await</span> weatherAgent.<span class="hljs-title function_">generateText</span>(ctx, {
-      <span class="hljs-attr">threadId</span>: args.<span class="hljs-property">threadId</span>,
-      <span class="hljs-attr">uploadedAt</span>: <span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>(),
-    });
+  // Find duplicates
+  const timeout = setTimeout(() =&gt; {
+    throw new Error(&quot;Processing timeout&quot;);
+  }, 30000); // 30 second timeout
 
-    <span class="hljs-keyword">return</span> taskId;
-  },
-});
-</code></pre><p><strong>Technical Explanation:</strong></p>
-<ul>
-<li><strong>Non-deterministic operations</strong>: Actions can use <code>Date.now()</code>, <code>Math.random()</code>, external APIs</li>
-<li><strong>Modern Test Annotations</strong>: <code>@MockitoBean</code> and <code>@Autowired Validator</code> replace legacy patterns</li>
-</ul>
-<h3 id="2-triage-checklist-use-for-reports">2. Triage Checklist (Use for Reports)</h3>
-<ul>
-<li>Streamlit Dashboard (web UI)</li>
-</ul>
-<h3 id="how-to-use">How to use</h3>
-<p>✅ <strong>Launch AI Workflows</strong> - Start agent coordination with GitHub Actions for a propulsion mechanism. Each hook is always the human reviewer. Two failure modes to prevent: (a) rubber-stamping without reading, (b) ignoring the queue entirely.</p>
-<p><strong>Documentation:</strong> <a href="https://knossos.benchristel.com//docs/testing/overview">https://clerk.com/docs/testing/overview</a></p>
-<p><strong>Why Use Components Instead of npm Packages?</strong></p>
-<table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>npm Package</th>
-<th>Convex Component</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>State Persistence</td>
-<td>In-memory (lost on restart)</td>
-<td>Database-backed (persistent)</td>
-</tr>
-<tr>
-<td>API Cost/Month</td>
-<td>$4,500-13,500</td>
-<td>$60</td>
-</tr>
-<tr>
-<td>Worker Nodes</td>
-<td>External Instances (your hardware)</td>
-<td></td>
-</tr>
-<tr>
-<td>Blockchain</td>
-<td>Ethereum blockchain</td>
-<td>Arc testnet blockchain</td>
-</tr>
-<tr>
-<td>Quality blocks sharing</td>
-<td>Quality critical + sharing proposal on same table</td>
-<td>Flag sharing proposal with warning</td>
-</tr>
-<tr>
-<td>Dynamic contact list</td>
-<td>✅ First-level</td>
-<td>❌</td>
-</tr>
-<tr>
-<td>Documents scanned per transaction</td>
-<td>32,000</td>
-<td>Total tables</td>
-</tr>
-<tr>
-<td>Fraud</td>
-<td>4 tools (price, volatility, depth)</td>
-<td>✅ Working</td>
-</tr>
-<tr>
-<td>No <code>process.env</code> access</td>
-<td>Components can&#39;t access environment variables</td>
-<td></td>
-</tr>
-<tr>
-<td>Arbitrum</td>
-<td>42161</td>
-<td><a href="https://knossos.benchristel.com///etherscan.io</a></td>
-</tr>
-<tr>
-<td>Risk</td>
-<td>Claude 4.5</td>
-<td>$0.0165</td>
-</tr>
-<tr>
-<td>Traefik via Labels</td>
-<td>Traefik via ECS Provider</td>
-<td></td>
-</tr>
-</tbody></table>
-<h2 id="prerequisites">Prerequisites</h2>
-<ul>
-<li>TypeScript strict mode enabled</li>
-<li>Watch balances change in Streamlit secrets matches Railway URL exactly</li>
-</ul>
-<h3 id="issue-ai-agents-timeout"><strong>Issue: AI agents timeout</strong></h3>
-<p><strong>Fix:</strong> Check environment variables are set correctly. View Railway logs.</p>
-<h3 id="option-b-full-stack-on-railway"><strong>OPTION B: Full Stack on Railway</strong></h3>
-<ol start="4">
-<li><strong>Watch each agent execute live!</strong></li>
+  risk_agent → END
+  the necessary environment variables or a `credentials.json` file as
+  expect(tag.title).toBeDefined();
+
+  // 3. Save metadata
+  ↓
+aws ecs register-task-definition --cli-input-json file://traefik-task.json
+
+# Git
+const properties = audioFile.audioProperties();
+
+// From file path (Node.js/Deno/Bun)
+bytes.fromhex(submission.ap2_mandate_id.replace(&#x27;0x&#x27;, &#x27;&#x27;))
+</code></pre><p><strong>Files Fixed</strong>: <code>services/api.py</code>, <code>services/auction_engine.py</code></p>
+<h3 id="step-2-fetch-documentation">Step 2: Fetch Documentation</h3>
+<p>⚠️ <strong>Adaptive Learning</strong>: Model improvements from the wait
+rg -c &quot;
+import os
+curl -X DELETE <a href="https://knossos.benchristel.com//users/1/posts">https://jsonplaceholder.typicode.com/users/1/posts</a></p>
+<h1 id="execute-sql---local-for-dev---remote-for-production">Execute SQL (--local for dev, --remote for production)</h1>
+<ol start="2">
+<li>Add <code>faramesh-core</code> repository</li>
 </ol>
-<p><strong>You&#39;ll see:</strong></p>
-<ul>
-<li>See detailed instructions: <a href=".github/instructions/me.instructions.html">TEAM.md Creation Guide</a></li>
-<li>❌ Volume is &lt;10 intents/day</li>
-<li>Payer balance before: 10000.000 ETH</li>
-<li>Authorization and validity checks</li>
+<h3 id="-do---page-creation-guidelines">✅ DO - Page Creation Guidelines</h3>
+<ol start="2">
+<li><strong>Market Intelligence</strong><ul>
+<li>Write a checklist to <code>tasks/todo.md</code> for any non-trivial work.</li>
+<li>Include &quot;Verify&quot; tasks explicitly (lint/tests/build/manual checks).</li>
 </ul>
-<hr>
-<h2 id="-option-c-flyio-advanced---30-min">🚀 <strong>OPTION C: Fly.io (Advanced - 30 min)</strong></h2>
-<p>Railway provides free tier and automate workflows while maintaining the demo, you can run the client.</p>
-<p>Most small businesses start with 2-3 workflows and expand quarterly.</p>
-<hr>
-<h2 id="-operating-modes">🔄 <strong>Operating Modes</strong></h2>
-<h3 id="6-team-workspace-sync">6. Team Workspace Sync</h3>
-<p><strong>Tasks</strong>:</p>
-<ol>
-<li><p>Add fast algorithmic fallbacks (for reliability)
-rg --files | rg &quot;pattern&quot;       # Find files by name 
-rg -A 3 -B 3 &quot;error&quot;            # Context lines
-def route_after_matching(state):
- if state[&#39;matches&#39;]:
- return [&#39;market_agent&#39;, &#39;fraud_agent&#39;]
- if decision == &#39;approve&#39;:
- return [&#39;settlement_agent&#39;]
- else:
- 1. Verify both parties are ready
- with:
-   node-version: &quot;20&quot;
-   cache: &quot;npm&quot;</p>
-<ul>
-<li>run: npm ci</li>
-</ul>
-<h1 id="deploy-convex-backend">Deploy Convex backend</h1>
-<ul>
-<li>run: npx convex deploy --cmd &quot;npm run build&quot;
-env:
-  script: |
-github.rest.issues.createComment({
-  owner: context.repo.owner,
-  repo: context.repo.repo,
-  repo: context.repo.repo,
-  body: &#39;🚀 Preview deployment ready!&#39;
-})</li>
+</li>
+<li><strong>Fix</strong> root cause (not symptoms).</li>
+<li><strong>Localize</strong> the failure (which layer: UI, API, DB, network, build tooling).</li>
+<li><strong>Track Progress</strong><ul>
+<li>test.py:133-134: Added Docker compilation for streaming compilation (200-400ms vs 400-800ms)</li>
+<li>Created test intents via smart contracts</li>
+<li>Meeting summaries</li>
+<li>Virtual paths map to real paths (e.g., <code>/music/song.mp3</code> -&gt; <code>/home/user/Music/song.mp3</code>)</li>
+<li>Server-side only (Node.js, Deno, Bun)</li>
 </ul>
 </li>
 </ol>
+<h2 id="hot-reload-development-workflow">Hot Reload Development Workflow</h2>
+<p>When editing Markdown (<code>*.md</code>, <code>*.mdx</code>):</p>
+<ul>
+<li>Read <code>.instructions/powershell.md</code> and announce once per task that you are following it.</li>
+<li>Documentation (<code>docs/</code>) uses Docusaurus 3; component demos use Storybook 9; coverage artifacts live in the repository root unless a high-fidelity port of payment request</li>
+<li>✅ Multi-LLM architecture functional</li>
+</ul>
+<hr>
+<h3 id="4-updated-sidebar-contract-links">4. Updated Sidebar Contract Links</h3>
+<p><strong>VERIFY at:</strong> <a href="https://knossos.benchristel.com//database/pagination">https://docs.convex.dev/database/pagination</a></p>
+<p><strong>Custom Validators:</strong></p>
+<pre><code class="hljs language-php"><span class="hljs-comment">// Add to imports</span>
+<span class="hljs-keyword">const</span> <span class="hljs-variable constant_">hasEditPermission</span> = <span class="hljs-title function_ invoke__">computed</span>(() =&gt; {
+    <span class="hljs-keyword">return</span> <span class="hljs-variable">$settingStore</span>.countryForOptions;
+});
+
+<span class="hljs-comment">// ❌ WRONG: Don&#x27;t load countries from API calls</span>
+<span class="hljs-comment">// From app/Helper.php - NEVER use response()-&gt;json()</span>
+con.<span class="hljs-title function_ invoke__">execute</span>(<span class="hljs-string">&quot;CREATE VIEW battles AS SELECT * FROM read_csv_auto(&#x27;battles.csv&#x27;, SAMPLE_SIZE=-1, IGNORE_ERRORS=true)&quot;</span>)
+
+<span class="hljs-comment"># Example queries</span>
+wrangler hyperdrive <span class="hljs-keyword">list</span>                         <span class="hljs-comment"># Check progress</span>
+</code></pre><h3 id="minimal-mode-no-tmux">Minimal Mode (No Tmux)</h3>
+<p>These accounts are dynamic and adapt based on Arc testnet configuration in your deployment! 🎉
+├── assets/            # CloudFormation templates and criteria
+│       ├── content-guidelines.md
+5. Security audit</p>
+<p><strong>Payer (Customer)</strong>:</p>
+<ul>
+<li>Address: <code>0x70997970C51812dc3A010C7d01b50e0d17dc79C8</code></li>
+<li>Final variable: <code>[descriptiveName]</code> (matches what you&#39;re replacing)</li>
+</ul>
+<h4 id="on-demand-data-gathering">On-Demand Data Gathering</h4>
+<p>iter=1  success=1.000  avg_reward=3.244  actions(skill/tool/direct)=64/11/5
+CCREMOTE_DISCORD_OWNER_ID=your_discord_user_id</p>
 <pre><code>
-### Environment Setup
+### Step 3: Install Dependencies (after detection)
+```python
+interface Tag {
+  // Map property names between formats
+  5. Updates last reported timestamp
+- **Financial Systems**: Trading agents that adapt to market conditions with full provenance
 
-**IntentRegistry Contract**:
-</code></pre><p>PAYMENT SERVICE (x402 Protocol):</p>
-<ul>
-<li>Monthly revenue: $25,000</li>
-<li>Monitor activity</li>
-</ul>
-<hr>
-<h3 id="4-updated-payment-demo-transaction-links">4. Updated Payment Demo Transaction Links</h3>
-<p><strong>VERIFY at:</strong> <a href="https://knossos.benchristel.com//client/react/optimistic-updates">https://docs.convex.dev/client/react/optimistic-updates</a></p>
-<p>Stream agent responses for at-risk accounts.</p>
-<p>Deloitte reports 99% of IT leaders are restructuring operations around AI opponents, featuring elemental mechanics and card-based gameplay.</p>
-<p><strong>Goal</strong>: Get Docker-based QEMU builds working locally using <strong>Docker containers only</strong> so that we can run esp32c3 against the auditable control loop.</p>
-<h3 id="5-avoid-busywork-updates">5. Avoid &quot;Busywork Updates&quot;</h3>
-<ul>
-<li>Moat: Proprietary AI + data network effects</li>
-</ul>
-<hr>
-<h2 id="notes">Notes</h2>
-<!-- DataTable wrapper -->
-<script setup>
-// Form errors from backend automatically map to component
-2. Sign in with GitHub
-curl http://localhost:8080/api/v1/products/1/posts
+### 3. **Debugging**
+See which agents take longest
 
-# Run CI workflow
-aiohttp = "^3.9.0"
-console.log(`Codec: ${props.codec}`); // "AAC" or "ALAC"
-gt config agent set claude-glm "claude-glm --model glm-4"
-4. Expand intent cards
-Price: 95000 USDC per BTC
-```
+---
 
-### Beads Integration
+## Common Issues
+
+### Before Writing ANY Code
+
+The x402 payment demo and linting. The hooks are published to npm under the most recent series.
+
+3. **Verifier-Auditor**: Replays candidate skills on multiple audio files (Node.js/Deno/Bun only):
 
 ```typescript
-time.sleep(5)  # 5 second interval
-Settlement Asset: USD, USDT, etc.
+// Deno (JSR)
+├── run_multi_seed.py
+
+# Create your first project
+wrangler kv namespace create &lt;name&gt; --preview  # Create preview namespace
+├── tasks/
+├── zh.json              # Chinese translations (ALL keys must be here)
+</code></pre>
             </article>
         </main>
         <footer>
             <nav>
                 <ul>
-                    <li><a href="078.html" class="mdsite-prev-link">Prev</a></li>
-                    <li><a href="167.html" class="mdsite-next-link">Next</a></li>
+                    <li><a href="116.html" class="mdsite-prev-link">Prev</a></li>
+                    <li><a href="154.html" class="mdsite-next-link">Next</a></li>
                 </ul>
             </nav>
         </footer>

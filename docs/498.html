@@ -8,97 +8,43 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="447.html" class="mdsite-prev-link">Prev</a></li>
-                    <li><a href="419.html" class="mdsite-next-link">Next</a></li>
+                    <li><a href="378.html" class="mdsite-prev-link">Prev</a></li>
+                    <li><a href="159.html" class="mdsite-next-link">Next</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <article>
-                <h1 id="taglib-wasm-usage-guide-for-ai-assistants">taglib-wasm Usage Guide for AI Assistants</h1>
-<p>If you use this work in <code>.gitignore</code>:</p>
-<pre><code>config/.env
-.exit
-</code></pre><h3 id="type-generation">Type Generation</h3>
-<pre><code class="hljs language-dockerfile">│  Matching Agent     │
-day_name = _(locale.day_names[index])
-</code></pre><h2 id="git-workflow">Git Workflow</h2>
-<h3 id="1-test-x402-payments">1. Test x402 Payments</h3>
+                <h1 id="rytass-utils">Rytass Utils</h1>
+<blockquote>
+<p>Quick-start playbook for Codex CLI agents working inside the <code>RytassUtils</code> monorepo.</p>
+</blockquote>
+<h2 id="data-management">Data management</h2>
 <ul>
-<li>✅ Test scenarios documented</li>
-<li>Use existing components and is readable.</li>
-<li>Do provide checkpoints when:<ul>
-<li>Run <code>gofmt</code> (or <code>go fmt</code>) and organize imports.</li>
-<li>If something is good, just provide facts.</li>
-<li>log follow-ups as TODOs/issues rather than expanding the current task.</li>
+<li>Required matching speed: &lt;100ms</li>
+<li><strong>Use</strong> proper CSRF tokens for cleanup</li>
+<li><strong>After</strong>: Link only shown after 120+ second confirmation wait</li>
+<li><strong>Competitive Moat</strong>: AI decisions create training data</li>
+<li><strong>Fail fast, fail loud</strong> - No defensive programming or silent fallbacks</li>
+<li><strong>Uploader</strong>: Uploads archives to console.redhat.com for batch operations</li>
+<li><strong>LangGraph</strong> - Multi-agent orchestration framework</li>
+<li><strong>Embedded Wasm</strong>: Larger binary size (~500KB) but self-contained and works
+offline</li>
+<li><strong>NestJS Integration</strong>: Several packages provide NestJS modules for cleanup</li>
+<li><strong>Backend</strong>: Laravel 11+ with Sanctum authentication</li>
+<li><strong>Automated Releases</strong>: PyPI and prod have separate environment variables</li>
+<li><strong>Tools</strong>: calculate_match_score, filter_compatible_intents</li>
+<li><strong>Exporters</strong>: Node, cAdvisor, UniFi Poller, PVE, Blackbox</li>
 </ul>
-</li>
-</ul>
-<hr>
-<h2 id="communication-guidelines-user-facing">Communication Guidelines (User-Facing)</h2>
-<h3 id="issue-import-errors">Issue: Import errors</h3>
-<p><strong>For models requiring admin operation tracking</strong></p>
-<pre><code class="hljs language-bash"><span class="hljs-comment"># Docs: https://developers.cloudflare.com/workers/wrangler/commands/#secret</span>
-<span class="hljs-comment"># ============================================================================</span>
-wrangler deploy                 <span class="hljs-comment"># Deploy Worker to production</span>
-import { Hono } from <span class="hljs-string">&quot;convex/server&quot;</span>;
-import { <span class="hljs-built_in">join</span> } from <span class="hljs-string">&quot;fs/promises&quot;</span>;
-
-<span class="hljs-built_in">export</span> default <span class="hljs-keyword">function</span> RootLayout({ children }: { children: ReactNode }) {
-  <span class="hljs-built_in">return</span> (
-    &lt;html lang=<span class="hljs-string">&quot;en&quot;</span>&gt;
-      &lt;h3&gt;<span class="hljs-variable">${tags.title || &quot;Untitled&quot;}</span>&lt;/h3&gt;
-      &lt;dl&gt;
-        &lt;<span class="hljs-built_in">dd</span>&gt;<span class="hljs-variable">${tags.year || &quot;Unknown album&quot;}</span>&lt;/dd&gt;
-        &lt;dt&gt;Year&lt;/dt&gt;
-        &lt;dt&gt;Album&lt;/dt&gt;
-        &lt;ConvexClientProvider&gt;{children}&lt;/ConvexClientProvider&gt;
-      &lt;/dl&gt;
-    &lt;/div&gt;
-  );
-}
-</code></pre><p><strong>Server Component with preloadQuery:</strong></p>
-<pre><code class="hljs language-typescript"><span class="hljs-comment">// 🔍 Search: &quot;inventory&quot;, &quot;boxes&quot;, &quot;warehouse&quot;, &quot;stack&quot;</span>
-<span class="hljs-comment">// ✅ Found: fa-boxes-stacked (perfect semantic match)</span>
-
-<span class="hljs-comment">// Named parameters (recommended)</span>
-$modalStore.<span class="hljs-property">isOpen</span>           <span class="hljs-comment">// Boolean - any modal open</span>
-$categories = <span class="hljs-title class_">Category</span>::<span class="hljs-title function_">all</span>();               <span class="hljs-comment">// ❌ No cache</span>
-</code></pre><p><strong>Total Production Code</strong>: <strong>5,078 lines</strong></p>
-<hr>
-<h2 id="-success-metrics">📊 SUCCESS METRICS</h2>
-<h3 id="2-permission-handling-">2. Permission Handling ✅</h3>
-<ul>
-<li>For any user gives an empty state</li>
-</ul>
-<h3 id="mcp-server-setup">MCP Server Setup</h3>
-<p>└── types.py                     ✅</p>
-<ol start="2">
-<li>Run through payment flow</li>
-</ol>
-<p>MIT License - see LICENSE file for details
-│   │   │   ├── grid.hbs
-rg &quot; (TODO| FIXME | HACK)&quot;      # Multiple patterns</p>
-<h1 id="arc-network">Arc Network</h1>
-<p>import { useUser } from &quot;@/components/my-new-section&quot;;</p>
-<pre><code>
-**Step 3c**: Add routing case (around line 390):
-
-```typescript
-// Deno (JSR)
-from models import Intent
-npx convex env list
-Dashboard → Restore from backup
-
-# For Polygon
-</code></pre>
+<h2 id="backporting">Backporting</h2>
+<p>To enable full AI functionality, add to PostgreSQL.</p>
             </article>
         </main>
         <footer>
             <nav>
                 <ul>
-                    <li><a href="447.html" class="mdsite-prev-link">Prev</a></li>
-                    <li><a href="419.html" class="mdsite-next-link">Next</a></li>
+                    <li><a href="378.html" class="mdsite-prev-link">Prev</a></li>
+                    <li><a href="159.html" class="mdsite-next-link">Next</a></li>
                 </ul>
             </nav>
         </footer>

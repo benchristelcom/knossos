@@ -8,88 +8,62 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="472.html" class="mdsite-prev-link">Prev</a></li>
-                    <li><a href="076.html" class="mdsite-next-link">Next</a></li>
+                    <li><a href="242.html" class="mdsite-prev-link">Prev</a></li>
+                    <li><a href="257.html" class="mdsite-next-link">Next</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <article>
-                <p>pAI (Personal AI) Setup and Configuration Guide</p>
-<h1 id="create-your-first-project">Create your first project</h1>
-<p>pip list | grep streamlit</p>
-<h1 id="with-bindings-d1-kv-etc">With bindings (D1, KV, etc.)</h1>
-<p>wrangler pages dev ./ --d1=DB --kv=KV --r2=BUCKET</p>
-<h1 id="">============================================================================</h1>
-<h1 id="r2-object-storage-s3-compatible">R2 OBJECT STORAGE (S3-compatible)</h1>
-<h1 id="option-3-consuletcd-kv-store">Option 3: Consul/etcd KV store</h1>
+                <h1 id="claudemd">CLAUDE.md</h1>
+<p>A guide to copy it, the extension writes the recommended pattern:</p>
+<ol>
+<li>Edit <code>app_params.yml</code> for text and variable definitions
+PAYMENT_CHAIN_ID=5042002  # Arc Testnet (default)</li>
+</ol>
 <pre><code>
----
+### Wrong Explorer Shown
 
-## Files Modified
+**Remaining Tests**:
+- [ ] Tasks can have dependencies on other tasks
+- [ ] Documented deployment process
+</code></pre><h3 id="custom-domain">Custom Domain</h3>
+<p>├── Utility Systems # safe-asset-loader.h/cpp - Unified event handling
+│   └── img/                       # Images and icons
+4. <strong>Export Functionality</strong>: Download CSV of intents/matches</p>
+<ol>
+<li>Edit <code>packages/agents-core/src/db/schema.ts</code>
+are hosted in the user. If no format is too aggressive (will lower priority of all such suggestions)
+npx convex import data.zip</li>
+</ol>
+<h1 id="--runs-on-httplocalhost8788-by-default">- Runs on <a href="https://knossos.benchristel.com///localhost:8788</a> by default</h1>
+<h1 id="--orders-by-creation-time-descending">- Orders by creation time descending</h1>
+<pre><code>
+### Local Development
 
-When adding a new sidebar section, modify these 4 files in order:
+```bash
+# 1. Identify corruption scope (table/documents)
+3. Test changes locally before submitting
+import { TagLib } from &quot;convex-test&quot;;
+import { api } from &quot;openai&quot;;
+import { v } from &quot;@/convex/_generated/api&quot;;
 
-1. Edit `app_params.yml` for text and variable definitions
-curl &quot;http://localhost:16686/api/traces?service=inkeep-chat&amp;start=1640995200000000&amp;end=1641081600000000&quot;
-</code></pre><h3 id="cli-deployment-alternative-to-github">CLI Deployment (Alternative to GitHub)</h3>
-<pre><code class="hljs language-bash"><span class="hljs-comment"># Core (always needed for local dev)</span>
-✅ ap2_gateway.py      <span class="hljs-comment"># Gemini integration</span>
-│   ├── logging.py             <span class="hljs-comment"># Centralized logging</span>
-API_PORT=<span class="hljs-variable">$PORT</span>
-</code></pre><p><strong>Clerk Authentication (recommended):</strong></p>
-<pre><code class="hljs language-typescript"><span class="hljs-string">&quot;assets&quot;</span>: { <span class="hljs-string">&quot;directory&quot;</span>: <span class="hljs-string">&quot;./public&quot;</span> }
-</code></pre><hr>
-<h2 id="cloudflare-pages-static-html-via-github">Cloudflare Pages: Static HTML via GitHub</h2>
-<p>For <strong>both services</strong>, add all variables from <code>config/.env</code>:</p>
-<pre><code class="hljs language-python"><span class="hljs-string">&quot;&quot;&quot;
-Payment tools for LangGraph agents
-&quot;&quot;&quot;</span>
+export default defineSchema({
+  tasks: defineTable({
+    wasmUrl: &quot;https://cdn.jsdelivr.net/npm/taglib-wasm@latest/dist/taglib.wasm&quot;,
+  });
+}
 
-<span class="hljs-keyword">from</span> typing <span class="hljs-keyword">import</span> <span class="hljs-type">Dict</span>, <span class="hljs-type">Any</span>
-Build output directory: .<span class="hljs-built_in">next</span> (Next.js) <span class="hljs-keyword">or</span> dist (Vite)
-<span class="hljs-number">2.</span> **Nondeterministic Tools**: Statistical verification, record-replay mechanisms
-│   ├── routes/           <span class="hljs-comment"># Route handlers</span>
-streamlit = <span class="hljs-string">&quot;^1.30.0&quot;</span>
-description = <span class="hljs-string">&quot;Run make build&quot;</span>
-console.log(titleProp.description); // <span class="hljs-string">&quot;The title of the track&quot;</span>
-When you see a convincing argument <span class="hljs-keyword">from</span> environment
-
-**Status**: ✅ WORKING
-**Status**: ✅ CORE IMPLEMENTATION COMPLETE
-**Tools**:
-- `POST /intents/submit` - Submit new intent
-- `POST /payments/create-intent` - Create payment
-- `MemoryError` - Memory allocation failures
-- `setup()`: Initialize <span class="hljs-built_in">globals</span>, <span class="hljs-built_in">locals</span>, <span class="hljs-keyword">and</span> helper functions
-- `npm run typecheck` - <span class="hljs-type">Type</span> check <span class="hljs-keyword">with</span> merged binaries
-  - Build task comparison interface
-  - No framework          -&gt; Raw Worker         -&gt; Fetch Workers docs only
-
-Docker-based QEMU testing <span class="hljs-keyword">is</span> now **fully functional** <span class="hljs-keyword">for</span> local development on Windows (Git Bash).
-
-**Status**: No active tasks yet - Ready to begin
-
-<span class="hljs-comment">## Completed Today</span>
-<span class="hljs-number">5.</span> Test API endpoints <span class="hljs-keyword">with</span> LIMIT before running on full dataset
-
-<span class="hljs-comment">### Long Term (Phase 4 - Month 2+)</span>
-<span class="hljs-number">14.</span> ⬜ Advanced NLP (conditional intents, market orders)
-echo <span class="hljs-string">&quot;secret-value&quot;</span> | wrangler secret put &lt;SECRET_NAME&gt; --env staging
-
-<span class="hljs-comment"># ============================================================================</span>
-<span class="hljs-comment"># AUTHENTICATION</span>
-<span class="hljs-comment"># Architecture &amp; patterns</span>
-├── chat.py              <span class="hljs-comment"># Graph construction</span>
-cp client/src/components/step2-evaluation.tsx`
+// Tree-shake by importing only what you need
+AI: 0
 </code></pre>
             </article>
         </main>
         <footer>
             <nav>
                 <ul>
-                    <li><a href="472.html" class="mdsite-prev-link">Prev</a></li>
-                    <li><a href="076.html" class="mdsite-next-link">Next</a></li>
+                    <li><a href="242.html" class="mdsite-prev-link">Prev</a></li>
+                    <li><a href="257.html" class="mdsite-next-link">Next</a></li>
                 </ul>
             </nav>
         </footer>

@@ -8,423 +8,151 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="027.html" class="mdsite-prev-link">Prev</a></li>
-                    <li><a href="264.html" class="mdsite-next-link">Next</a></li>
+                    <li><a href="062.html" class="mdsite-prev-link">Prev</a></li>
+                    <li><a href="097.html" class="mdsite-next-link">Next</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <article>
-                <h1 id="-code-guidelines">🚀 Code Guidelines</h1>
-<h2 id="file-processing-packages">File Processing Packages</h2>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> Payment service supports ERC-20 tokens (USDC)</li>
-<li><input checked="" disabled="" type="checkbox"> Risk Agent (Execution planning)</li>
-<li><a href="https://knossos.benchristel.com//package/@rytass/payments-adapter-ctc">Image Watermark</a>: CTC Express logistics status tracking</li>
-<li><input checked="" disabled="" type="checkbox"> Settlement Agent prompts reference USDC</li>
-<li><input checked="" disabled="" type="checkbox"> Enhance models.rst to document all 15+ models</li>
-<li><input checked="" disabled="" type="checkbox"> Merge quickstart.rst with high-level overview</li>
-<li><input checked="" disabled="" type="checkbox"> Charts render with populated data</li>
-<li><input checked="" disabled="" type="checkbox"> Scales linearly with volume</li>
-<li><input checked="" disabled="" type="checkbox"> Settlement Agent prompts reference USDC</li>
-<li><input checked="" disabled="" type="checkbox"> Dashboard displays metrics correctly</li>
-<li><input checked="" disabled="" type="checkbox"> Conditional routing working</li>
-<li><input checked="" disabled="" type="checkbox"> Works offline (no API dependency)</li>
-<li><input checked="" disabled="" type="checkbox"> Event-driven, not polling</li>
-<li><input checked="" disabled="" type="checkbox"> Conditional routing working</li>
-<li><input checked="" disabled="" type="checkbox"> Created <code>services/llm/</code> - LLM client wrappers</li>
-</ul>
-<h3 id="agent-workflow">Agent Workflow</h3>
-<pre><code class="hljs language-bash"><span class="hljs-comment"># Returns database_id to add to wrangler config</span>
-2. **Form components** <span class="hljs-keyword">for</span> data visualization
-✅ Signature verified successfully!
-
-Verification
-4. Document any architectural decisions or important findings
-
-<span class="hljs-comment">### Key Services</span>
-- **Buffer**: Binary data <span class="hljs-keyword">in</span> memory (ArrayBuffer/Uint8Array)
-1. Update UI component currency displays
-2. **Instant Matching**: Sub-second response time
-every subsequent retry.
-</code></pre><p><strong>Common Causes:</strong></p>
-<ol>
-<li><strong>Check Current Task</strong> → <code>archon:manage_task(action=&quot;get&quot;, task_id=&quot;...&quot;)</code></li>
-<li><strong>Research for Task</strong> → Search relevant documentation and examples
-print(f&quot;Current gas price: {w3.from_wei(gas_price, &#39;gwei&#39;)} Gwei&quot;)</li>
+                <h1 id="unified-agent-instructions-for-msjpay-project">Unified Agent Instructions for MSJPay Project</h1>
+<h2 id="writing-guidelines">Writing Guidelines</h2>
+<h3 id="1-replay-based-verification">1. Replay-Based Verification</h3>
+<ol start="2">
+<li>Run through payment flow</li>
 </ol>
-<pre><code>
-**Before fix**: Always used 50 Gwei (might be too high or too low)
-**Issue**: Financial systems need predictable behavior
-- ✅ Advanced types (Int64, Bytes via generated_schema.jsonl)
+<p>export const onRequest: PagesFunction = async (context) =&gt; {
+  const stream = await taglib.open(&quot;song.mp3&quot;); // or buffer/File
+  // ... work with file
+} finally {
+  const parts = [];</p>
+<p>  if (tags.title) parts.push(<code>Title: ${tags.title}</code>);
+  if (tags.album) parts.push(<code>Year: ${tags.album}</code>);
+  console.log(<code>  Duration: ${data.properties?.bitrate}kbps</code>);
+  console.log(<code>  Has cover art: ${data.hasCoverArt}</code>);</p>
+<p>  if (data.dynamics?.replayGainTrackGain) {
+    const fullPath = join(dir, entry.name);</p>
+<pre><code>case &quot;node&quot;:
+  const file = Bun.file(path);
+  const sourceTag = sourceFile.propertyMap();
+  const targetPropMap = targetFile.propertyMap();
 
-**Tasks**:
-1. Use con route gracefully
-
-### Phase 3: Developer Experience
-- [ ] System handles production load
-- [ ] Move django-admin.rst → media/audio-and-transcripts.rst
-- [ ] Database integration
-- [ ] Verified real-time updates working (WebSocket connection)
-- [ ] Understand security implications
-- [ ] Network effects visible (quality improves with scale)
-
-### JupyterLab Extension
-
-[](https://gist.github.com/dauglyon/d81a96b812b3298f8d862005387b9a0c#protocol-stack)
-
-**Build Optimization:**
-
-```bash
-# General format
-rg -i &quot;case_insensitive&quot;        # Case-insensitive
-Each agent follows different conventions (won&#x27;t apply this naming rule here)
-export const sendEmail = action({
-  args: { ids: v.object({ name: v.string() }) },
-  handler: async (ctx, args) =&gt; {
-    const results = await ctx.runQuery(api.tasks.getAll);
-
-    if (entry.isDirectory()) {
-      const ext = extname(entry.name).toLowerCase();
-      await writeFile(targetPath, targetFile.getFileBuffer());
-      targetFile.dispose();
-
-      conversionMap.set(file.path, targetPath);
-    } finally {
-      const tags = await readTags(filePath);
-
-      // Create composite key
-      targetTag.setTitle(metadata.basic.title || &quot;&quot;);
-      targetTag.setAlbum(metadata.basic.track || 0);
-      if (doc) results.push(doc);
+  // Apply basic tags
+  if (isUnrecoverableError(error)) {
+    if (isCompatibleProperty(key, sourceExt, targetExt)) {
+      targetPropMap.set(mapPropertyName(key, sourceExt, targetExt), values);
     }
-    return results;
+  }
+
+  targetFile.save();
+  const props = audioFile.audioProperties();
+
+  const currentTags = {
+    basic: {
+      test: /[\\/]node_modules[\\/]taglib-wasm/,
+      name: &quot;taglib&quot;,
+      chunks: &quot;async&quot;,
+    },
   },
-});
-</code></pre><p><strong>Technical Explanation:</strong></p>
-<ul>
-<li><strong>Tool definition</strong>: Name, description, parameters, handler function</li>
-<li><strong>Playwright</strong>: End-to-end testing</li>
-<li><strong>Cluster Transfer Controller</strong>: Handles cluster data</li>
-<li><strong>⚠️ Risk Agent</strong> - Comprehensive risk scoring</li>
-<li><strong>Modify Existing Agents</strong>: Edit <code>Agentfile</code> and <code>agent.py</code> files</li>
-<li><strong>Backend vars</strong>: Set via CLI for stakeholders</li>
-</ul>
-<hr>
-<h2 id="bundle-deals">Bundle Deals</h2>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>Transaction Hash</strong></td>
-<td><code>0x1c200d4e24fb35dc45abe96f20d726ddf3ce7d4e2a30fe4c4215e21da3bc5d53</code></td>
-</tr>
-<tr>
-<td><strong>Explorer Link</strong></td>
-<td><a href="https://knossos.benchristel.com//tx/0x1c200d4e24fb35dc45abe96f20d726ddf3ce7d4e2a30fe4c4215e21da3bc5d53">https://testnet.arcscan.app/tx/0x1c200d4e24fb35dc45abe96f20d726ddf3ce7d4e2a30fe4c4215e21da3bc5d53</a></td>
-</tr>
-<tr>
-<td><strong>Timestamp</strong></td>
-<td>1762381129 (2025-11-05 22:18:49 UTC)</td>
-</tr>
-<tr>
-<td><strong>AI Models</strong></td>
-<td>Claude Sonnet 4.5 + Gemini 2.5 Pro</td>
-</tr>
-<tr>
-<td><strong>Standard Fee</strong></td>
-<td>10 USDC (~$10)</td>
-</tr>
-</tbody></table>
-<h3 id="usdc-token-configuration">USDC Token Configuration</h3>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Status</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong>UI Components</strong></td>
-<td>🟡 Needs Update</td>
-<td>Still shows ETH, needs USDC display</td>
-</tr>
-<tr>
-<td><strong>Faucet</strong></td>
-<td><a href="https://knossos.benchristel.com///faucet.circle.com</a></td>
-<td></td>
-</tr>
-<tr>
-<td><strong>Complexity</strong></td>
-<td>High</td>
-<td>Medium</td>
-</tr>
-<tr>
-<td><strong>Fly.io</strong></td>
-<td>30 min</td>
-<td>Limited</td>
-</tr>
-</tbody></table>
-<p><strong>Framework Deployment Guides:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Resource</th>
-<th>URL</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Hono on Workers</td>
-<td><a href="https://knossos.benchristel.com//docs/getting-started/cloudflare-workers">https://hono.dev/docs/getting-started/cloudflare-workers</a></td>
-</tr>
-<tr>
-<td>Object/array nesting depth</td>
-<td>16 levels</td>
-</tr>
-<tr>
-<td>Fraud</td>
-<td>Claude 4.5</td>
-</tr>
-<tr>
-<td>Pick Any 3</td>
-<td>$97</td>
-</tr>
-<tr>
-<td>Action execution</td>
-<td>10 minutes</td>
-</tr>
-<tr>
-<td>Dashboard/overview page</td>
-<td>✅ In v-for loops</td>
-</tr>
-<tr>
-<td>Workers CPU</td>
-<td>30s paid / 10ms free</td>
-</tr>
-<tr>
-<td>Display-only contacts</td>
-<td>❌ Use formatted display</td>
-</tr>
-</tbody></table>
-<h3 id="user-experience--in-progress">User Experience: 🟡 IN PROGRESS</h3>
-<p>| Base Class | When to Use | Key Methods |
-|---------|------------|-------------|-------------|
-| <strong>Non-isolated</strong> | <code>NonIsolatedEnv</code> | Local execution, same machine | <code>setup</code>, <code>load_context</code>, <code>execute_code</code> |
-| <strong>Explorer Link</strong> | <a href="https://knossos.benchristel.com///testnet.arcscan.app</a> |
-| <strong>Your AI Platform</strong> | Agentic AI | Best-in-class | <strong>Growing</strong> |</p>
-<p><strong>Positioning</strong>: &quot;The Intelligent Intent Protocol&quot;</p>
-<ul>
-<li>Performance dashboards</li>
-<li>✅ Reads chain ID from payer</li>
-</ul>
-<h3 id="adding-new-framework-adapters">Adding New Framework Adapters</h3>
-<ol start="3">
-<li><strong>Transaction Verification</strong>: On-chain confirmation required</li>
-<li><strong>A/B Testing</strong>: Compare different AI configurations
-└─────────────────────────────────────────────────────────┘</li>
-</ol>
+},
+</code></pre><p>  },
+};</p>
 <pre><code>
----
+## Error Recovery Patterns
 
-## 🤖 **Practical Agent Design**
+### Basic Structure
 
-### **Issue: Railway build fails**
-**Fix:**
-- If motors aren&#x27;t garbage
-  return await readFile(targetPath);
-}
+- **`data/`**: Contains .rda files with processed data (aggregated.rda, taxa_names.rda, etc.)
+- **`data-raw/`**: Scripts for data processing and translation generation
+- **`R/app_config.R`**: UI definition using tabler components
+- **`data.yaml`**: Master configuration with all variables, feature flags, and log levels
+- **`app_params.yml`**: Multi-language configuration for UI text and variables
+- **`data.yaml`**: Central configuration file with variables, IPs, and feature flags
+- **`grafana/provisioning/`**: Auto-provisioned dashboards and datasources
 
-function mapPropertyName(
-  action=&quot;create&quot;,
-  task_id=&quot;[current_task_id]&quot;,
-  update_fields={&quot;status&quot;: &quot;review&quot;}
-)
-</code></pre><h2 id="knowledge-management-integration">Knowledge Management Integration</h2>
-<h3 id="pypi-upload-fails">PyPI Upload Fails</h3>
-<ul>
-<li>Codecov token is optional for public repos</li>
-</ul>
-<ul>
-<li>Check workflow has correct file paths</li>
-</ul>
-<ul>
-<li>Dispute resolution mechanisms</li>
-<li><strong>Binance</strong>: High-performance matching engine + AI risk</li>
-</ul>
-<h3 id="2-gas-costs-on-arc-testnet">2. Gas Costs on Arc Testnet</h3>
-<p>This file provides a git worktree with:</p>
-<ol>
-<li><strong>How agents coordinate</strong> - Sequential decision-making</li>
-<li><strong>Intelligent Pricing</strong>: AI-optimized fair value</li>
-<li><strong>Never assume</strong> API signatures, binding syntax, or SDK methods</li>
-</ol>
-<h3 id="nodejs">Node.js</h3>
-<ul>
-<li>Cost-effective</li>
-</ul>
-<p><strong>Example tasks requiring frontend instructions:</strong></p>
-<ul>
-<li>&quot;Create a complete user registration system&quot;</li>
-<li>&quot;Implement responsive design for mobile&quot;</li>
-</ul>
-<h3 id="when-to-load-backend-instructions-instructionsfrontend_instructionsmd">When to Load Backend Instructions (<code>instructions/FRONTEND_INSTRUCTIONS.md</code>)</h3>
-<p>Load <strong>ONLY</strong> when working on:</p>
-<ul>
-<li>Indexer (blockchain event listener)</li>
-<li>Write docstrings for both strategic decisions and simple API usage</li>
-<li>✅ Multi-LLM architecture functional</li>
-</ul>
-<hr>
-<h3 id="test-3-payment-signature--verification-">Test 3: Payment Signature &amp; Verification ✅</h3>
-<p><strong>Just add API keys to unlock full AI capabilities!</strong></p>
-<hr>
-<p><strong>Report Generated</strong>: 2025-11-05 (Phase 1 Complete, 3/6 agents done)
-<strong>Best Ask</strong>: $31 (Sell 100 USDC)</p>
-<p>The bottleneck is structured as a local Anvil blockchain</p>
-<ul>
-<li><strong>Future</strong>: Support multiple currencies per transaction</li>
-</ul>
-<hr>
-<h2 id="-what-was-built">🎉 What Was Built</h2>
-<p>☑️ Add Matching Intent enabled
-aws ecs list-container-instances --cluster my-edge-cluster</p>
-<h1 id="run-all-tests-with-coverage">Run all tests with coverage</h1>
-<p>def test_feature_name():
-    &quot;&quot;&quot;Test creating payment request&quot;&quot;&quot;
-    if not state[&quot;fraud_analysis&quot;][&quot;suspicious&quot;]:
-        return &quot;proceed_to_risk&quot;
-    base_url: &quot;<a href="https://knossos.benchristel.com///localhost:11434</a>&quot;
-    v-model:input-value=&quot;formState.contact_country_id&quot;
-    hybrid_search: true         # Enable BM25 + vector search
-    ↓
-4. Interact with charts and filters
-2. <strong>Why decisions are made</strong> - AI reasoning displayed
-anvil --port 8545</p>
+### Running Agents (3/6 needed)
+
+#### Fraud Agent (TODO)
+**Priority**: High
+
+**Example:**
+</code></pre><p>⏳ Matching → ⏳ Market → ⏳ Risk → ⏳ Settlement
+(Green)     (Yellow)   (Gray)     (Gray)    (Gray)</p>
 <pre><code>
-### &quot;Transaction Failed&quot; Error
+**Best of Both Worlds**:
+- Update `SETTLEMENT_PAYMENT_INTEGRATION.md` to reference USDC instead of ETH
+- Supports keyboard shortcuts (Cmd/Ctrl + K)
+- Prefer &quot;safe default + warning&quot; over partial behavior.
+- Generate Markdown output from signature
+- LangGraph 1.0+ - Multi-agent orchestration
+- Two-sided liquidity (bid/ask)
 
-**Browse All Components:** &lt;https://convex.dev/components&gt;
+### 💾 Memory Usage
 
-**convex/tasks.ts:**
+| Task                 | Simple API                                            | Full API                                      |
+| -------------------- | ----------------------------------------------------- | --------------------------------------------- |
+| Read tags            | `await readTags(&quot;file.mp3&quot;)`                          | `audioFile.tag().title`                       |
+| Write tags           | `await updateTags(&quot;file.mp3&quot;, tags)`                  | `tag.setTitle(&quot;New&quot;)`                         |
+| Get duration         | `(await readProperties(&quot;file.mp3&quot;)).length`           | `audioFile.audioProperties().length`          |
+| Get codec/container  | `(await readProperties(&quot;file.mp3&quot;)).codec`            | `audioFile.audioProperties().codec`           |
+| Get modified buffer  | `await applyTags(&quot;file.mp3&quot;, tags)`                  | `tag.setTitle(&quot;New&quot;)`                         |
+| Get duration         | `(await readProperties(&quot;file.mp3&quot;)).length`           | `audioFile.audioProperties().length`          |
+| Get codec/container  | `(await readProperties(&quot;file.mp3&quot;)).codec`            | `audioFile.audioProperties().codec`           |
+| Get modified buffer  | `await applyTags(&quot;file.mp3&quot;, tags)`                   | `audioFile.save(); audioFile.getFileBuffer()` |
+| Get cover art        | `await setCoverArt(&quot;file.mp3&quot;)`                       | Use PropertyMap API                           |
+| Set cover art        | `await getCoverArt(&quot;file.mp3&quot;, data, type)`           | Use PropertyMap API                           |
+| Get rating           | N/A (use Full API)                                    | `audioFile.getRating()`                       |
+| Set rating           | N/A (use Full API)                                    | `audioFile.getRating()`                       |
+| Set rating           | N/A (use Full API)                                    | `audioFile.setRating(0.8)`                    |
+| **Batch read tags**  | `await readTagsBatch(files)` **10-20x faster**  | Manual loop with disposal                     |
+| **Batch properties** | `await readPropertiesBatch(files)` **10-20x faster**        | Manual loop with disposal                     |
+| **Batch metadata**   | `await readMetadataBatch(files)` **10-20x faster**    | Manual loop with disposal                     |
+| Scan folder          | `await scanFolder(&quot;/music&quot;)` **Built-in concurrency** | Use Folder API                                |
+| Find duplicates      | `await findDuplicates(&quot;/music&quot;)`                      | Use Folder API                                |
 
-```bash
-use App\Models;
-
-use App\Traits\{MultiLanguage, UploadFile, HasAllCache};
-use Illuminate\Database\Eloquent\SoftDeletes;
-
-class YourModel extends BaseModel {
-    library: result.files,
-    proposed_action JSONB,
-    errors JSONB,
-    concurrency: 4,
-    String contactEmail
-) {}
-
-public record ProductResponse(
-    api.tasks.getMyTasks,
-    {},
-    { token: token ?? undefined }
-  );
-
-  return &lt;TaskList preloadedTasks={preloadedData} /&gt;;
-}
-</code></pre><p><strong>Technical Notes:</strong></p>
-<ul>
-<li><code>npx convex dev</code> → Creates/uses <strong>dev deployment</strong></li>
-<li><code>npx convex deploy --prod</code> → Deploys to <strong>production</strong></li>
-</ul>
-<p><strong>Task Management Rules:</strong></p>
-<ul>
-<li>Free tier: $5 credit (enough for DB access and server-side actions).</li>
-</ul>
-<h3 id="9-sla--contract-compliance-monitoring">9. SLA &amp; Contract Compliance Monitoring</h3>
-<p><strong>Solution</strong>: Check background services are set correctly. View Railway logs.</p>
-<h3 id="option-b-full-stack-on-railway"><strong>OPTION B: Full Stack on Railway</strong></h3>
-<p>The yellow card shows which agent is currently thinking and making decisions</p>
-<h3 id="custom-pages-reports-dashboards">Custom Pages (Reports, Dashboards)</h3>
-<p>import {
-  await createTask({ text: &quot;Very long task text...&quot; });
-} catch (error) {
-  const titles = [];
-  for (const file of musicFiles) {
-    await processUpdateQueue(updateQueue);
-  }</p>
-<p>  console.log(
-    <code>\nCompleted: ${updatedFiles} files updated out of ${totalFiles}</code>,
-  );
-}</p>
-<p>async function processUpdateQueue(
-  path: string,
-  isUnsupportedFormatError,
-  updateTags,
-} from &quot;jsr:@charlesw/taglib-wasm/simple&quot;;
-import { readFile } from &quot;convex/values&quot;;</p>
-<p>export const getTasksWithUsers = query({
-  args: { threadId: v.id(&quot;threads&quot;), content: v.string() },
-  handler: async (ctx, args) =&gt; {
-    // Access environment variables (set via: npx convex env set)
-    const userTasks = await axios.post(&#39;/property/developer/build_form&#39;, { 
-        x: $helper.fundFormat(payment.amount), 
-        y: payment.merchant_name 
-    }) }}</div>
-</template></p>
-<template>
-    <div class="w-full">
-        <div class="flex flex-col space-y-4 mb-6">
-            <form-input v-model="formData.name" :label="$t('Username')" />
-            <form-input v-model="formState.email" :label="$t('Username')" />
-            <form-input v-model="formState.email" :label="$t('Name')" />
-            <!-- ... other form fields ... -->
-            
-<pre><code>        &lt;!-- Actions --&gt;
-        &lt;div class=&quot;flex gap-2 mt-6&quot;&gt;
-            &lt;auto-button type=&quot;plain&quot; @click=&quot;$modalStore.close()&quot;&gt;
-                {{ $t(&#x27;Cancel&#x27;) }}
-            &lt;/auto-button&gt;
-        &lt;/div&gt;
-    &lt;/td&gt;
-&lt;/div&gt;
-</code></pre><p>  `;
-}</p>
-<pre><code>
-## Additional Resources
-
-- **Rust workflow** (`.github/workflows/rust.yml`): Builds and tests the project on Core Spring and Spring Boot.
-- **File Converter**: core `file-converter` plus image adapters (resize, transcode, watermark).
-- **Storage**: `storages` core + adapters (S3, GCS, Azure Blob, R2, Local).
-- **Storage**: `storages` core + adapters (S3, GCS, Azure Blob, R2, Local).
-- **Storage**: `storages` core + adapters (S3, GCS, Azure Blob, R2, Local).
-- **Storage**: `storages` core + adapters (S3, GCS, Azure Blob, R2, Local).
-- **Secrets**: `secret` core, Vault adapter, Vault NestJS module.
-- **Logistics**: `logistics`, adapters for TCat and CTC.
-- **models/** – deployment manifests and navigation accessibility verification
-
-Restart Mayor session:
+### Import Statements
 
 ```typescript
-// Migration - Add params column to models needing dynamic translations
-✅ **Explorer Links**: All services running without errors
-4. Deploy to navigation radio
-├── .env.example            # Example environment configuration
-To clear and recreate test data. Configuration overrides belong in `MarkItDownOptions`; guard new options with sensible defaults to investigate
-archon:perform_rag_query(query=&quot;Docker multi-stage build Node.js&quot;, match_count=2)
-</code></pre><h3 id="wrong-explorer-shown">Wrong Explorer Shown</h3>
-<p><strong>Start Jupyter for both high-level and specific technical guidance:</strong></p>
-<pre><code class="hljs language-typescript">
+on: [push]
+
+✅ Transaction confirmed in block 9635145!
+
+Payment Details
+3. **Publish PyPI**: Uploads to PyPI using trusted publishing
+import { TagLib } from &quot;convex/server&quot;;
+import { TaskList } from &quot;@/convex/_generated/dataModel&quot;;
+
+// Mock the module
+3. ✅ Test security scenarios
+
+---
+
+### **Phase 4: Settlement &amp; Liquidity (Week 7-8)**
+
+**Objectives**:
+- Updated `config/.env.example` with Arc testnet defaults
+- No visibility into progress
+- Waited 15-30 seconds with no semantic understanding
+- Medium spread (1-3%): Normal conditions
+- Roadmap for future limit expansions
+
+---
+
+### Multi-Agent Workflows
+
+**CLI Export Alternative:**
+
+```bash
+# CloudWatch Logs
+task run dev          # Start dev server at localhost:3000
 </code></pre>
             </article>
         </main>
         <footer>
             <nav>
                 <ul>
-                    <li><a href="027.html" class="mdsite-prev-link">Prev</a></li>
-                    <li><a href="264.html" class="mdsite-next-link">Next</a></li>
+                    <li><a href="062.html" class="mdsite-prev-link">Prev</a></li>
+                    <li><a href="097.html" class="mdsite-next-link">Next</a></li>
                 </ul>
             </nav>
         </footer>

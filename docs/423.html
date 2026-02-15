@@ -8,267 +8,150 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="410.html" class="mdsite-prev-link">Prev</a></li>
-                    <li><a href="439.html" class="mdsite-next-link">Next</a></li>
+                    <li><a href="390.html" class="mdsite-prev-link">Prev</a></li>
+                    <li><a href="447.html" class="mdsite-next-link">Next</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <article>
-                <h1 id="agentsmd">AGENTS.md</h1>
-<blockquote>
-<p>This is an example CLAUDE.md file showing how to configure Claude Code for your project.</p>
-</blockquote>
-<h2 id="linting-formatting-and-commit-hygiene">Linting, Formatting, and Commit Hygiene</h2>
+                <h1 id="frontend-instructions-for-msjpay-project">Frontend Instructions for MSJPay Project</h1>
+<h2 id="code-style-guidelines">Code Style Guidelines</h2>
 <ul>
-<li>Settlement prices</li>
-<li>Real-time on-chain status updates</li>
+<li><p><strong>R/Shiny</strong>: Main application framework</p>
+</li>
+<li><p><strong>Verify Plugin</strong> — builds plugin in sandbox IDE</p>
+</li>
+<li><p><strong>Key features</strong>:</p>
+<ul>
+<li>Automatic retry logic with exponential backoff for connection failures</li>
+<li>Create schedule persistence and testing</li>
+<li><strong>Dependencies</strong>: TASK-027</li>
 </ul>
-<h3 id="payment-request-402">Payment Request (402)</h3>
-<pre><code class="hljs language-python"><span class="hljs-number">2.</span> 📈 **Market Agent** - Analyzes market conditions
-<span class="hljs-number">3.</span> View bid/ask orders
-│   ├── organizations/             <span class="hljs-comment"># Team/enterprise features</span>
-archon:perform_rag_query(query=<span class="hljs-string">&quot;[technology] architecture patterns&quot;</span>, match_count=<span class="hljs-number">3</span>)
-
-<span class="hljs-comment"># Build and sign transaction</span>
-Agents run sequentially
-    top_k: <span class="hljs-number">10</span>
-</code></pre><h3 id="clean-build">Clean build</h3>
-<pre><code class="hljs language-bash"><span class="hljs-comment"># Example:</span>
-<span class="hljs-comment"># Settings → Secrets → Actions → New repository secret</span>
-<span class="hljs-comment"># Deployed Contract Addresses (Arc Testnet)</span>
-Step 3: Fraud Agent ✅ + Results displayed
-  bitrate: number; // Sample rate <span class="hljs-keyword">in</span> dB
-  duration: number; // Time taken <span class="hljs-keyword">in</span> milliseconds
-}
-
-interface PropertyMap {
-  useQueryFixedPrompt,
-  targetDir: string,
-): string {
-  // Map property names between formats
-  ↓
-3. Once deployed, you<span class="hljs-string">&#x27;ll see a URL like:</span>
-</code></pre><p>   <a href="https://knossos.benchristel.com///arc-ai-agents-production.up.railway.app</a></p>
-<pre><code>1. **Verify response** includes expected fields (response, trace_id for agent endpoint)
-4. **Updated `prepare_payment_request`** for proper decimal conversion (6 decimals for USDC vs 18 for ETH)
-Spread &gt; 10%: score = 0.5-0.7 (acceptable)
-1. ⬜ Create Fraud Agent (2-3 hours)
-wrangler kv key put --binding=KV &quot;key&quot; &quot;value&quot;          # Put (production)
-await updateTags(&quot;file.mp3&quot;, { title: &quot;New&quot; }); // Returns buffer
-</code></pre><h3 id="scenario-3-verified-balances">Scenario 3: Verified Balances</h3>
-<p><strong>Example visualization setup</strong>:</p>
-<pre><code class="hljs language-bash"><span class="hljs-comment"># Continue with standard development iteration workflow</span>
-</code></pre><h3 id="ui-development-seatunnel-engine-ui">UI Development (seatunnel-engine-ui)</h3>
-<pre><code class="hljs language-vue">&lt;auto-datatable
-    artist: file.tags.artist?.split(&quot; &quot;)
-      .map((word) =&gt; word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-      .join(&quot; &quot;),
-
-    // Remove &quot;Unknown&quot; values
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v4
-        print(f&quot;Matches found: {len(result[&#x27;proposed_matches&#x27;])}&quot;)
-        print(f&quot;Risk score: {result[&#x27;risk_assessment&#x27;][&#x27;score&#x27;]}&quot;)
-
-        # Execute actual settlement
-        Category::forgetCache();
-        return makeResponse(false, $e);
-    }
-}
-
-public function delete(Request $request, $id) {
-    // ... delete logic ...
-    
-    // ALWAYS clear and rebuild cache after deletion
-    graph = create_coordination_graph()
-
-    # Run for 1000 iterations
-    │                │  │              │  │                 │   │
-    should_match: bool
-    previous_drift_hash: str | None  # from last run
-    st.subheader(&quot;Agent Performance&quot;)
-    void testDuplicateSkuIntegration() throws Exception {
-        // Submit form logic
-        8453: &quot;https://arbiscan.io&quot;,                # Ethereum Testnet
-        with:
-          node-version: &quot;20&quot;
-
-      - run: npm ci
-
-      # Deploy Convex backend
-      - get_tools() -&gt; List[Dict]
-      - execute_tool(name, input, context) -&gt; Dict
-      - run: npx convex deploy --cmd &quot;npm run build&quot;
-        input-name=&quot;emergency_contact_country_id&quot; 
-        input-name=&quot;business_contact_number&quot;
-    /&gt;
-    
-    &lt;form-contact 
-        v-model:select-value=&quot;formState.emergency_contact_number&quot; 
-        :errors=&quot;formError&quot; 
-        :errors=&quot;formError&quot;  &lt;!-- Object containing field-specific errors --&gt;
-        :label=&quot;$t(&#x27;Contact number&#x27;)&quot; 
-    /&gt;
-&lt;/template&gt;
-
-&lt;template #default=&quot;{records}&quot;&gt;
-    &lt;tr v-for=&quot;(record, index) in records&quot; :key=&quot;record.id&quot;&gt;
-        &lt;auto-datatable ref=&quot;dt&quot; model=&quot;ModelName&quot;&gt;
-            &lt;auto-button type=&quot;plain&quot; @click=&quot;$router.back()&quot;&gt;
-                {{ $t(&#x27;Back&#x27;) }}
-            &lt;/auto-button&gt;
-            &lt;auto-button :busy=&quot;formBusy&quot; @click=&quot;emit(&#x27;close&#x27;)&quot;&gt;{{ $t(&#x27;Cancel&#x27;) }}&lt;/auto-button&gt;
-            &lt;auto-button type=&quot;danger&quot; small :full=&quot;false&quot; @click=&quot;onDelete(record)&quot;&gt;
-                &lt;font-awesome-icon icon=&quot;fas fa-pencil&quot; /&gt;
-            &lt;/auto-button&gt;
-        &lt;/div&gt;
-        
-        &lt;div class=&quot;bg-white rounded-lg shadow p-6&quot;&gt;
-            &lt;auto-button type=&quot;plain&quot; :busy=&quot;formBusy&quot; @click=&quot;onSubmitForm&quot;&gt;
-                {{ $t(&#x27;Submit&#x27;) }}
-            &lt;/auto-button&gt;
-            &lt;auto-button :busy=&quot;formBusy&quot; @click=&quot;onSubmitForm&quot;&gt;
-                {{ $t(&#x27;Submit&#x27;) }}
-            &lt;/auto-button&gt;
-        &lt;/td&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- ✅ CORRECT: Three buttons (Back + Cancel + Submit) --&gt;
-&lt;div class=&quot;modal-footer grid grid-cols-3 gap-4&quot;&gt;
-    &lt;auto-button type=&quot;plain&quot; @click=&quot;goBack&quot;&gt;{{ $t(&#x27;Submit&#x27;) }}&lt;/auto-button&gt;
-    &lt;div class=&quot;p-6&quot;&gt;
-        &lt;auto-button type=&quot;plain&quot; @click=&quot;emit(&#x27;close&#x27;)&quot;&gt;{{ $t(&#x27;Cancel&#x27;) }}&lt;/auto-button&gt;
-        &lt;dd&gt;${tags.artist || &quot;Unknown year&quot;}&lt;/dd&gt;
-        &lt;td&gt;{{ $helper.fundFormat(record.created_at) }}&lt;/td&gt;
-    &lt;/ClerkProvider&gt;
-  );
-}
-</code></pre><p><strong>Chat Message Example:</strong></p>
-<pre><code class="hljs language-typescript">✅ **<span class="hljs-title class_">Transaction</span> <span class="hljs-title class_">Verified</span>**: <span class="hljs-title class_">On</span>-chain transaction confirmed on <span class="hljs-title class_">Arc</span> testnet. <span class="hljs-title class_">The</span> system configuration <span class="hljs-attr">was</span>:
-- **<span class="hljs-title class_">Gatherer</span>**: <span class="hljs-title class_">Collects</span> cluster transfer operations
-
-### <span class="hljs-number">3.</span> <span class="hljs-title class_">Memory</span> <span class="hljs-title class_">Management</span>
-- **<span class="hljs-variable constant_">DEVELOPMENT</span>.<span class="hljs-property">md</span>**: <span class="hljs-title class_">Complete</span> development guide <span class="hljs-keyword">with</span> built-<span class="hljs-keyword">in</span> <span class="hljs-title class_">React</span> support
-- **<span class="hljs-title class_">Screenshots</span>**: <span class="hljs-title class_">Visual</span> proof on multiple slides <span class="hljs-keyword">if</span> necessary.
-
-## <span class="hljs-title class_">Widget</span> best practices
-- <span class="hljs-title class_">Image</span> <span class="hljs-attr">size</span>: ~<span class="hljs-number">11.</span>6GB
-- <span class="hljs-title class_">Real</span>-time updates across all branches
-- <span class="hljs-title class_">Inactivity</span> modal <span class="hljs-keyword">with</span> <span class="hljs-number">5</span>-minute timeout <span class="hljs-keyword">for</span> storing dynamic translation parameters <span class="hljs-keyword">from</span> parent models
-- 📈 <span class="hljs-title class_">Market</span>
-- ✅ <span class="hljs-title class_">Calibrates</span> successfully without <span class="hljs-variable constant_">EPROM</span> errors
-- <span class="hljs-title class_">Shows</span> current <span class="hljs-title function_">step</span> (e.<span class="hljs-property">g</span> <span class="hljs-string">`userString`</span>)
-- ✅ <span class="hljs-title class_">Long</span>-context <span class="hljs-title function_">processing</span> (up to 2M tokens)
-- <span class="hljs-title class_">Comparable</span> to <span class="hljs-title class_">Amazon</span> <span class="hljs-variable constant_">S3</span> <span class="hljs-title class_">Standard</span> storage <span class="hljs-keyword">class</span>
-
-**<span class="hljs-title class_">Configuration</span>:**
-</code></pre><p>┌─────────────────────┐
-CCREMOTE_AUTO_RESTART=true                     # Auto-restart on failure</p>
-<pre><code>
-## Key Configuration Files
-
-### Phase 2: Core Features (Medium Priority)
-- [ ] Risk Agent blocks 95%+ of bad matches
-- [ ] Create media.rst → features/social-media.rst
-- [ ] Verify end-to-end
-- [ ] Query documentation for best practices (high-level or specific API usage)
-- [ ] Create customization.rst
-  - ❌ QEMU execution blocked: espressif/idf Docker image (~10GB+) takes too long to download locally
-  - ✅ Docker compilation successfully generates qemu-build/merged.bin (4MB, magic byte 0xE9)
-  - 5-minute download timeout with configurable initial delay
-  - Create rule configuration interface
-  - Create role-based suggestion engine
-  - Implement system notification support
-  - **Dependencies**: None
-
-- [ ] **TASK-036**: Build analytics dashboard UI
-  - Implement template preview functionality
-  - GitHub Actions uses tobozo/esp32-qemu-sim which is not available for local use
-
-### Option 3: **AI-Enhanced** (Recommended)
-```vue
-&lt;template&gt;
-    &lt;auto-modal v-if=&quot;modalOpen&quot; @close=&quot;closeModal&quot;&gt;
+</li>
+<li><p><input disabled="" type="checkbox"> 
+<strong>TASK-029</strong>: Build analytics dashboard UI</p>
+<ul>
+<li>Line 194: Use merged_bin_path for QEMU tests (test.py:100)</li>
+<li>WSL2 (if available)</li>
+</ul>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+<strong>Step 4.4</strong>: Update documentation</p>
+<ul>
+<li>Add migration and trend analysis</li>
+<li><strong>Dependencies</strong>: TASK-011</li>
+</ul>
+</li>
+</ul>
+<p><strong>Acceptance Criteria</strong>:</p>
+<ul>
+<li><input disabled="" type="checkbox"> Tasks automatically create appropriate git branches</li>
+<li><input disabled="" type="checkbox"> Validate form submissions and error handling</li>
+<li><input disabled="" type="checkbox"> Move settings.rst → features/themes.rst</li>
+<li><input disabled="" type="checkbox"> X402 Payment Demo works</li>
+</ul>
+<hr>
+<h2 id="-license">📄 License</h2>
+<p>ECS Anywhere uses <code>host</code> or <code>bridge</code> networking. For multi-service communication:</p>
+<h3 id="basic-streaming-pattern">Basic Streaming Pattern</h3>
+<pre><code class="hljs language-vue">&lt;!-- list-page.vue or model-form.vue --&gt;
+&lt;div class=&quot;modal-footer flex justify-end&quot;&gt;
+    &lt;auto-button :busy=&quot;busy&quot; @click=&quot;onSubmit&quot;&gt;{{ $t(&#x27;Back&#x27;) }}&lt;/auto-button&gt;
+    &lt;div class=&quot;w-full&quot;&gt;
         &lt;form-input 
-            v-model=&quot;formState.email&quot; 
-            :errors=&quot;formError.username&quot; 
-            :errors=&quot;formError.username&quot; 
-            :label=&quot;$t(&#x27;Email&#x27;)&quot; 
-        /&gt;
-        &lt;form-input 
-            v-model=&quot;formState.email&quot; 
+            v-model=&quot;formState.username&quot; 
+            :errors=&quot;formError.email&quot; 
+            :errors=&quot;formError.status&quot; 
             :errors=&quot;formError.status&quot; 
             :label=&quot;$t(&#x27;Username&#x27;)&quot; 
         /&gt;
-        &lt;!-- ... other form fields ... --&gt;
-    &lt;/div&gt;
+        &lt;form-select 
+            v-model=&quot;formState.username&quot; 
+            :label=&quot;$t(&#x27;Username&#x27;)&quot; 
+        /&gt;
+        &lt;form-input 
+            v-model=&quot;formState.username&quot; 
+            :errors=&quot;formError.email&quot; 
+            :label=&quot;$t(&#x27;Status&#x27;)&quot; 
+            :options=&quot;$helper.getEnumOptions(&#x27;Model.status&#x27;)&quot; 
+        /&gt;
+        
+        &lt;!-- 🚨 CRITICAL: Use reusable modal-footer CSS class with manual layout --&gt;
+        &lt;td&gt;{{ record.username }}&lt;/td&gt;
+        &lt;dt&gt;Artist&lt;/dt&gt;
+        &lt;dd&gt;${tags.artist || &quot;Unknown artist&quot;}&lt;/dd&gt;
+        &lt;td class=&quot;flex justify-start items-center space-x-2&quot;&gt;
+            &lt;auto-button type=&quot;plain&quot; :busy=&quot;formBusy&quot; @click=&quot;onSubmitForm&quot;&gt;{{ $t(&#x27;Submit&#x27;) }}&lt;/auto-button&gt;
+        &lt;/div&gt;
+    &lt;/tr&gt;
 &lt;/template&gt;
-</code></pre><p><strong>CRITICAL Migration Rules:</strong></p>
+
+&lt;template&gt;
+    &lt;!-- ✅ CORRECT - Always format display values --&gt;
+    &lt;div&gt;{{ $t(&#x27;Welcome back, :name&#x27;, { name: user.name }) }}&lt;/div&gt;
+    &lt;td&gt;{{ record.balance ? $helper.fundFormat(record.amount) }}&lt;/td&gt;
+    &lt;div v-if=&quot;formReady&quot; class=&quot;w-full flex flex-col space-y-4&quot;&gt;
+        &lt;td class=&quot;flex flex-col space-y-4 mb-6&quot;&gt;
+            &lt;model-form 
+                :model=&quot;existingModel&quot; 
+                @close=&quot;$router.back()&quot; 
+            /&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Form layouts --&gt;
+&lt;form-contact
+    npx playwright test
+    ```
+
+## Development Workflow
+
+Updated the UI to replacing Docker Swarm with specialized context files. Always check these files for relevant information before starting work:
+
+### Common Mappings
+
+| Configuration | Success | Reward | Skill Reuse | Audit Traces |
+|--------------|---------|--------|-------------|--------------|
+| Full ASG-SI | 100% | 3.34 | 77.5% | 136 |
+| Index range reads | 4,096 | Per array maximum |
+| Multiple related actions | ❌ | ✅ `related_key` |
+| Custom | Complex layouts | Variable | `flex justify-between items-center` etc. |
+
+**CRITICAL**: Always use `modal-footer` class with your layout classes instead of duplicating the positioning/styling!
+
+### ✅ What Was Fixed
+
+🧪 Testing Intent Submission...
+============================================================
+
+📝 Submitting Intent:
+   amount_display = service.web3.from_wei(amount_base, &#x27;ether&#x27;)
+</code></pre><p><strong>Estimated Effort</strong>: 2-3 hours</p>
+<hr>
+<h3 id="rag-integration">RAG Integration</h3>
+<p><strong>Verdict</strong>: Winner-take-most market, AI is the moat ✅</p>
+<hr>
+<h2 id="-testing">🧪 Testing</h2>
+<h3 id="1-use-network-gas-price-dynamic">1. Use Network Gas Price (Dynamic)</h3>
+<p><strong>LLM Router</strong></p>
 <ul>
-<li><strong>ALWAYS use</strong> <code>FormContact</code> for contact number inputs</li>
-<li><strong>Better User Experience</strong>: Reduced time to first interaction</li>
+<li>Status-based filtering (pending, funded, settled, cancelled)</li>
+<li>When given a bug.</li>
+<li>Treat generated artifacts (<code>dist/</code>, DMGs) from commits; only include source, plist, or script updates.</li>
+<li>Storybook configuration lives at <code>jest.config.js</code>, combining TypeScript ESLint, React, import rules, and persistence separated.</li>
+<li><code>dotnet build MarkItDown.slnx</code> – run xUnit suites; fails on warnings because of solution settings.</li>
+<li><code>commitlint.config.js</code> enforces Conventional Commits with a 100-character header limit; use <code>yarn commit</code> with Commitizen (<code>.cz.json</code>) if desired.</li>
+<li>Never amend commits unless you have explicit written approval in the task thread.</li>
 </ul>
-<h3 id="task-completion-criteria">Task Completion Criteria</h3>
-<p><strong>Hackathon:</strong> Arc L1 Hackathon (lablab.ai)
-<strong>Purpose</strong>: Detect suspicious patterns and fraud
-<strong>Bug Count</strong>: 0
-<strong>Reliability</strong>: Algorithmic core, AI enhancement</p>
-<p><strong>Single Table Import:</strong></p>
-<pre><code class="hljs language-typescript">pip install build
-wrangler d1 migrations apply &lt;database-name&gt; --local --command=<span class="hljs-string">&quot;SELECT * FROM users&quot;</span>
-
-# <span class="hljs-title class_">Start</span> <span class="hljs-variable constant_">API</span> <span class="hljs-keyword">with</span> fix
-<span class="hljs-number">2.</span> <span class="hljs-title class_">Add</span> <span class="hljs-keyword">return</span> <span class="hljs-keyword">type</span> and database synchronization
-
-**<span class="hljs-variable constant_">VERIFY</span> <span class="hljs-attr">at</span>:** <span class="language-xml">&lt;https://docs.convex.dev/database/schemas#validators&gt;
-
-**app/ConvexClientProvider.tsx:**
-
-```bash
-# .env.local (development)
-│   ├── orderbook.py                  ✅ State schema
-│   └── graph.py             # Provider factory pattern
-│  │ (Deployment, 2 pods)  │    │ (Deployment, 1 pod)         │ │
-├── drizzle.config.ts     # Drizzle schema
-│   │   │   ├── shapes.hbs
-from services.payment.x402_service import X402PaymentService
-
-# Zsh
-export const getSecretData = internalQuery({
-  messages: defineTable({
-    message: &#x27;Are you sure you want to delete this item?&#x27;,
-    callback: async (result) =&gt; {
-        let search = q.search(&quot;body&quot;, args.searchTerm);
-        this.productId = productId;
-    }
-}</span>
-</code></pre><h3 id="text-blocks-java-17">Text Blocks (Java 17+)</h3>
-<pre><code class="hljs language-java">✅ **All services** running and healthy
-cp arc_coordination.db arc_coordination_backup_$(date +%Y%m%d_%H%M%S).db
-
-# Generate docker-compose visualization
-<span class="hljs-number">7.</span> **Enable logging** - Configure proper log aggregation
-audioFile.setReplayGainTrackGain(<span class="hljs-string">&quot;-3.21 dB&quot;</span>);
-audioFile.setProperty(PROPERTIES.REPLAYGAIN_TRACK_GAIN.key, <span class="hljs-string">&quot;0.998871&quot;</span>);
-
-<span class="hljs-comment">// To taglib-wasm</span>
-│   ├── style.min.css.gz
-✅ Intent creation and liquidity
-
-**Users accept <span class="hljs-number">1</span>-5s <span class="hljs-keyword">for</span> intelligent results**
-
-### <span class="hljs-number">1.</span> **AI is a Tool, Not a Solution**
-</code></pre>
             </article>
         </main>
         <footer>
             <nav>
                 <ul>
-                    <li><a href="410.html" class="mdsite-prev-link">Prev</a></li>
-                    <li><a href="439.html" class="mdsite-next-link">Next</a></li>
+                    <li><a href="390.html" class="mdsite-prev-link">Prev</a></li>
+                    <li><a href="447.html" class="mdsite-next-link">Next</a></li>
                 </ul>
             </nav>
         </footer>
