@@ -14,10 +14,11 @@ The way it works is, we detect potential customers via security camera video
 footage) and use AI to detect their intent to open an account. Then we run a
 credit report (also AI) and issue them a card.
 
-Incidentally, I am also the CTO and cofounder of Nowhere.ci, which makes smart
-watches for dogs. Nowhere.ci partners with CashNow Vehicle 5 LLC to detect
-intent to purchase via video feed data. We then charge the card and ship the
-product to the address associated with the security camera.
+Incidentally, I am also the CTO and cofounder of Nowhere.ci, which makes
+personalized dietary supplement systems for dogs. Nowhere.ci partners with
+CashNow Vehicle 5 LLC to detect intent to purchase via video feed data. We then
+charge the card and ship the product to the address associated with the
+security camera.
 
 We have over $145M in accounts receivable with insane gross margins, and we are
 looking to expand into new product lines. The rates on the cards are good too —
