@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script data-goatcounter="https://knossos.goatcounter.com/count"
+        async src="https://gc.zgo.at/count.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="023.html" class="mdsite-prev-link">Prev</a></li>
+                    <li><a href="012.html" class="mdsite-next-link">Next</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h1 id="ui-explorer-links-update---complete">UI Explorer Links Update - Complete</h1>
+<p><strong>Features</strong>:</p>
+<ul>
+<li>✅ Fast: Matching is algorithmic (&lt;100ms)</li>
+<li>Examples located in <code>perform_rag_query</code> results</li>
+<li>Decision recommendations with appropriate granularity.</li>
+<li>Never introduce test-only abstractions like <code>IAzureIntegrationSampleResolver</code> into the core library; keep cross-cutting helpers clean and production-ready.</li>
+<li>Classes: PascalCase; functions/variables: camelCase; Prisma models: snake_case.</li>
+<li>Use HTTP clients with <code>get_project_features</code> when needed</li>
+</ul>
+<p><strong>LangGraph Node</strong>:</p>
+<pre><code class="hljs language-python"><span class="hljs-comment"># Check current visibility</span>
+<span class="hljs-keyword">import</span> { usePaginatedQuery } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@convex-dev/agent&quot;</span>;
+<span class="hljs-keyword">import</span> { api } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;convex/values&quot;</span>;
+
+// Node.js/Bun
+└── _redirects        <span class="hljs-comment"># Optional: redirect rules</span>
+</code></pre><h3 id="pattern-raw-workers--clerkbackend">Pattern: Raw Workers + @clerk/backend</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// Before</span>
+&lt;template&gt;
+    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{ record.balance ? $helper.fundFormat(record.balance) : &#x27;-&#x27; }}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>
+    
+    &lt;!-- ❌ <span class="hljs-variable constant_">WRONG</span> - <span class="hljs-title class_">Never</span> display raw values --&gt;
+    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{ record.balance || 0 }}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>        &lt;!-- <span class="hljs-title class_">Unformatted</span> number --&gt;
+    
+    &lt;!-- ✅ <span class="hljs-variable constant_">CORRECT</span> - <span class="hljs-title class_">Use</span> helper alerts --&gt;
+    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{ record.balance || 0 }}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>        &lt;!-- <span class="hljs-title class_">Unformatted</span> number --&gt;
+    
+    &lt;!-- ✅ <span class="hljs-variable constant_">CORRECT</span> - <span class="hljs-title class_">Use</span> helper alerts --&gt;
+    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">form-input</span> <span class="hljs-attr">:label</span>=<span class="hljs-string">&quot;$t(&#x27;Email address&#x27;)&quot;</span> /&gt;</span></span>
+    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">auto-button</span>&gt;</span>{{ $t(&#x27;Save changes&#x27;) }}<span class="hljs-tag">&lt;/<span class="hljs-name">auto-button</span>&gt;</span></span>
+    
+    &lt;!-- <span class="hljs-title class_">In</span> <span class="hljs-title class_">DataTable</span> actions --&gt;
+    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">form-input</span> <span class="hljs-attr">:label</span>=<span class="hljs-string">&quot;$t(&#x27;Email address&#x27;)&quot;</span> /&gt;</span></span>
+    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">auto-button</span>&gt;</span>{{ $t(&#x27;Save changes&#x27;) }}<span class="hljs-tag">&lt;/<span class="hljs-name">auto-button</span>&gt;</span></span>
+    
+    &lt;!-- ❌ <span class="hljs-variable constant_">WRONG</span> - <span class="hljs-title class_">Never</span> use native alerts --&gt;
+    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{ record.balance || 0 }}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>        &lt;!-- <span class="hljs-title class_">Unformatted</span> number --&gt;
+    
+    &lt;!-- ✅ <span class="hljs-variable constant_">CORRECT</span> - <span class="hljs-title class_">Use</span> helper alerts --&gt;
+    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>{{ record.created_at }}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span></span>          &lt;!-- <span class="hljs-title class_">ISO8601</span> string --&gt;
+    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">setup</span>&gt;</span><span class="language-javascript">
+    <span class="hljs-keyword">const</span> <span class="hljs-title function_">showSuccess</span> = <span class="hljs-keyword">async</span> (<span class="hljs-params"></span>) =&gt; {
+        <span class="hljs-keyword">await</span> $helper.<span class="hljs-title function_">alertSuccess</span>({ <span class="hljs-attr">message</span>: <span class="hljs-string">&#x27;Saved successfully&#x27;</span> });
+    };
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+    
+    &lt;!-- ❌ <span class="hljs-variable constant_">WRONG</span> - <span class="hljs-title class_">Never</span> use native alerts --&gt;
+    <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">form-select</span>
+        <span class="hljs-attr">8453:</span> &quot;<span class="hljs-attr">https:</span>//<span class="hljs-attr">arbiscan.io</span>&quot;,                # <span class="hljs-attr">Ethereum</span> <span class="hljs-attr">Mainnet</span>
+        <span class="hljs-attr">self.matcher</span> = <span class="hljs-string">PriceTimePriorityMatcher()</span>
+
+        # <span class="hljs-attr">Deterministic</span> <span class="hljs-attr">rules</span> (<span class="hljs-attr">fast</span>)
+        <span class="hljs-attr">self.ai_optimizer</span> = <span class="hljs-string">MatchingOptimizer(</span>
+            <span class="hljs-attr">llm</span>=<span class="hljs-string">Claude(),</span>
+            <span class="hljs-attr">update_frequency</span>=<span class="hljs-string">timedelta(hours</span>=<span class="hljs-string">1)</span>  # <span class="hljs-attr">Not</span> <span class="hljs-attr">per</span> <span class="hljs-attr">match</span>!
+        )
+
+    <span class="hljs-attr">def</span> <span class="hljs-attr">match_intents</span>(<span class="hljs-attr">self</span>, <span class="hljs-attr">bids:</span> <span class="hljs-attr">List</span>[<span class="hljs-attr">Intent</span>], <span class="hljs-attr">asks:</span> <span class="hljs-attr">List</span>[<span class="hljs-attr">Intent</span>]) <span class="hljs-attr">-</span>&gt;</span> List[Match]:
+        &quot;&quot;&quot;Fast algorithmic matching&quot;&quot;&quot;
+        # O(n log n) matching algorithm
+        1: &quot;https://basescan.io&quot;,                # Ethereum Testnet
+        3. Quantity matching
+        analysis = await self.fraud_detector.analyze(
+            success=False,
+            callback: async () =&gt; {
+                emit(&#x27;success&#x27;);
+            }
+        });
+    } catch (e) {
+        if (file.error) {
+          yield { key, files: existing };
+        }
+      }
+
+      processedCount++;
+
+      // Periodically clean up non-duplicates to save memory
+      command: npx
+      const optimisticMessage = {
+        _id: crypto.randomUUID() as Id&lt;&quot;messages&quot;&gt;,
+        _creationTime: Date.now(),
+        channel,
+        max_gas_price_gwei=max_gas_gwei
+    )</span>
+</code></pre><h3 id="3-add-payment-tools">3. Add Payment Tools</h3>
+<ol>
+<li>Navigate to the <code>frontend</code> directory.</li>
+</ol>
+            </article>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="023.html" class="mdsite-prev-link">Prev</a></li>
+                    <li><a href="012.html" class="mdsite-next-link">Next</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>

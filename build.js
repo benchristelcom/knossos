@@ -24,10 +24,18 @@ async function main() {
     }
 
     const writePromises = []
-    for (let i = 256; i < 512; i++) {
+    for (let i = 1; i <= 512; i++) {
         const id = zeropad(3, i)
         const path = `src/${id}.md`
-        const text = `# The Product Is The Process \#${id}\n\n` + model.generate()
+        const text = model.generate()
+        writePromises.push(fs.writeFile(path, text, "utf-8"))
+    }
+    await Promise.all(writePromises)
+    writePromises.length = 0
+    for (let i = 1; i <= 24; i++) {
+        const id = zeropad(3, i)
+        const path = `src/agents/${id}.md`
+        const text = model.generate()
         writePromises.push(fs.writeFile(path, text, "utf-8"))
     }
     await Promise.all(writePromises)

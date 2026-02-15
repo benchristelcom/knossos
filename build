@@ -2,16 +2,7 @@
 
 mkdir -p src
 
-./build.js ../training-data/*
-
-cat >src/index.md <<-EOF
-# The Website of Elias Tusques
-
-Hey! I'm Elias, Principal Engineer at Nowhere.ci. We make smart
-watches for dogs.
-
-This is my personal blog.
-EOF
+./build.js ../training-data/mdc/*
 
 cat >src/404.md <<-EOF
 <script>
